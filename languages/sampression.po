@@ -1,0 +1,679 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sampression Lite\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-05 05:21+0000\n"
+"PO-Revision-Date: 2018-11-05 05:23+0000\n"
+"Last-Translator: finedine <finedine@gmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: includes/functions.php:650
+msgid "%"
+msgstr ""
+
+#: single.php:55 loop.php:71 image.php:50
+msgid "% Comments"
+msgstr ""
+
+#. 1: comment author, 2: date and time
+#: includes/functions.php:533
+#, php-format
+msgid "%1$s on %2$s"
+msgstr ""
+
+#: includes/functions.php:633
+#, php-format
+msgid ""
+"%3$s <time class=\"col\" datetime=\"2011-09-28\"><span class=\"ico\">"
+"Published on</span>%2$s</time> "
+msgstr ""
+
+#: single.php:65
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: comments.php:45 comments.php:76
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: includes/functions.php:650
+msgid "0"
+msgstr ""
+
+#: includes/functions.php:650
+msgid "1"
+msgstr ""
+
+#: single.php:55 loop.php:71 image.php:50
+msgid "1 Comment"
+msgstr ""
+
+#: loop.php:84
+#, php-format
+msgid "<div class=\"overflow-hidden cat-listing\">%s</div>"
+msgstr ""
+
+#. 1: date, 2: time
+#: includes/functions.php:539
+#, php-format
+msgid "<span class=\"date-details\">%1$s</span>"
+msgstr ""
+
+#: includes/functions.php:657
+#, php-format
+msgid ""
+"<span class=\"ico\">Categories</span><div class=\"overflow-hidden cat-"
+"listing\">%s</div>"
+msgstr ""
+
+#: image.php:18
+msgid "<span class=\"meta-nav\">&larr;</span> Back to Gallery"
+msgstr ""
+
+#: includes/functions.php:289
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: single.php:22
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: image.php:133
+msgid "<span class=\"meta-nav\">&larr;</span> Previous Image"
+msgstr ""
+
+#: single.php:45 loop.php:61 image.php:41
+#, php-format
+msgid ""
+"<time class=\"col posted-on genericon-day\" datetime=\"2011-09-28\">"
+"%2$s</time> "
+msgstr ""
+
+#: includes/functions.php:220
+msgid "A theme by"
+msgstr ""
+
+#: includes/theme-page.php:19
+msgid "About Theme"
+msgstr ""
+
+#: category.php:85 index.php:42 archive.php:90 tag.php:65 author.php:92
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+
+#: search.php:56
+msgid ""
+"Apologies, but no results were found for the requested keyword. Please try "
+"another keywords.."
+msgstr ""
+
+#: includes/functions.php:421
+msgid ""
+"Appears on bottom of the Page - First Widget - Please insert only one widget "
+"for better appearance."
+msgstr ""
+
+#: includes/functions.php:431
+msgid ""
+"Appears on bottom of the Page - Second Widget - Please insert only one "
+"widget for better appearance."
+msgstr ""
+
+#: includes/functions.php:441
+msgid ""
+"Appears on bottom of the Page - Third Widget - Please insert only one widget "
+"for better appearance."
+msgstr ""
+
+#: includes/functions.php:451
+msgid ""
+"Appears on right of the Interior Pages - Can use as much widgets as you wish."
+msgstr ""
+
+#: category.php:52 sidebar-right.php:58 tag.php:37
+msgid "Archive"
+msgstr ""
+
+#: archive.php:45 author.php:52
+msgid "Archives"
+msgstr ""
+
+#: author.php:34
+msgid "Author Archives: "
+msgstr ""
+
+#: includes/customizer.php:356
+msgid "Background Color"
+msgstr ""
+
+#: includes/customizer.php:163
+msgid "Background Image"
+msgstr ""
+
+#: 404.php:23
+msgid "Better to go"
+msgstr ""
+
+#: archive.php:35
+msgid "Blog Archives"
+msgstr ""
+
+#: includes/customizer.php:321
+msgid "Body Text Color"
+msgstr ""
+
+#: includes/customizer.php:302
+msgid "Body Text Font"
+msgstr ""
+
+#: includes/functions.php:420
+msgid "Bottom Widget One"
+msgstr ""
+
+#: includes/functions.php:440
+msgid "Bottom Widget Three"
+msgstr ""
+
+#: includes/functions.php:430
+msgid "Bottom Widget Two"
+msgstr ""
+
+#: category.php:41 sidebar-right.php:46 tag.php:30 author.php:62
+msgid "Categories"
+msgstr ""
+
+#: category.php:24
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: comments.php:73
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:95
+msgid "Comments are closed."
+msgstr ""
+
+#: includes/customizer-theme-info.php:45
+msgid "Community Forum"
+msgstr ""
+
+#: includes/functions.php:856
+msgid "Contact Form 7"
+msgstr ""
+
+#: includes/customizer.php:137
+msgid "Copyright Text"
+msgstr ""
+
+#: includes/theme-page.php:65
+msgid "Customizable Header"
+msgstr ""
+
+#: includes/theme-page.php:36
+msgid "Customize everything from a single place."
+msgstr ""
+
+#: archive.php:29
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: includes/customizer-theme-info.php:37
+msgid "Documentation"
+msgstr ""
+
+#: single.php:74 page.php:48 image.php:61 includes/functions.php:504
+#: includes/functions.php:544
+msgid "Edit"
+msgstr ""
+
+#: loop.php:98
+msgid "Edit this post"
+msgstr ""
+
+#: includes/customizer.php:403
+msgid "Facebook link"
+msgstr ""
+
+#: header.php:245
+msgid "Filter By:"
+msgstr ""
+
+#: includes/customizer.php:555
+msgid "Flickr link"
+msgstr ""
+
+#: includes/theme-page.php:48
+msgid "For further help, please visit our support page at:"
+msgstr ""
+
+#: includes/theme-page.php:35
+msgid "Getting started"
+msgstr ""
+
+#: includes/customizer.php:527
+msgid "Github link"
+msgstr ""
+
+#: includes/theme-page.php:40
+msgid "Go to Customizer"
+msgstr ""
+
+#: includes/customizer.php:471
+msgid "Google+ link"
+msgstr ""
+
+#: includes/customizer.php:370
+msgid "Header &amp; Navigation"
+msgstr ""
+
+#: includes/customizer.php:607
+msgid "Header Image"
+msgstr ""
+
+#: includes/customizer.php:273
+msgid "Header Text Color"
+msgstr ""
+
+#: includes/customizer.php:254
+msgid "Header Text Font"
+msgstr ""
+
+#: 404.php:24
+msgid "home"
+msgstr ""
+
+#. URI of the theme
+msgid "http://sampression.com/themes/sampression-lite/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.sampression.com"
+msgstr ""
+
+#: includes/functions.php:211
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: includes/functions.php:221
+msgid "https://www.sampression.com/"
+msgstr ""
+
+#: includes/customizer-theme-info.php:74
+msgid "Important Links"
+msgstr ""
+
+#: includes/functions.php:450
+msgid "Inner Sidebar"
+msgstr ""
+
+#: includes/customizer.php:541
+msgid "Instagram link"
+msgstr ""
+
+#: includes/customizer.php:344
+msgid "Link Color"
+msgstr ""
+
+#: includes/customizer.php:513
+msgid "Linkedin link"
+msgstr ""
+
+#: includes/customizer-theme-info.php:41 includes/theme-page.php:98
+msgid "Live Theme Demo"
+msgstr ""
+
+#: includes/customizer.php:91
+msgid "Logo"
+msgstr ""
+
+#: includes/theme-page.php:91
+msgid ""
+"Material packed with .po & .mo files, which will help you localise the theme "
+"for another language. We have expanded the theme localisation to cover all "
+"aspect, of our theme."
+msgstr ""
+
+#: includes/theme-page.php:77
+msgid "Mobile Responsive"
+msgstr ""
+
+#: archive.php:31
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: sidebar-right.php:16
+msgid "Most Popular"
+msgstr ""
+
+#: comments.php:46 comments.php:79
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: includes/functions.php:290
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: single.php:23
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: image.php:136
+msgid "Next Image <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: single.php:55 loop.php:71 image.php:50
+msgid "No comments yet"
+msgstr ""
+
+#: category.php:79 index.php:38 archive.php:85 tag.php:61 author.php:87
+msgid "Nothing Found"
+msgstr ""
+
+#: search.php:49
+msgid "Nothing Found For: "
+msgstr ""
+
+#: includes/functions.php:862
+msgid "One click demo import"
+msgstr ""
+
+#: comments.php:34
+#, php-format
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: 404.php:21
+msgid "Oops! Page not found."
+msgstr ""
+
+#: includes/theme-page.php:73
+msgid ""
+"Our designers and developers follow the best SEO practices while developing "
+"each theme – we make sure search engine spiders like what they see when they "
+"are crawling your site."
+msgstr ""
+
+#: includes/theme-page.php:85
+msgid ""
+"Our theme supports Right-To-Left (RTL) Languages to give you a full "
+"experience on languages of the world like (Arabic, Hebrew etc.)"
+msgstr ""
+
+#: single.php:86 page.php:40 loop.php:51
+msgid "Pages:"
+msgstr ""
+
+#: includes/functions.php:504
+msgid "Pingback:"
+msgstr ""
+
+#: includes/customizer.php:499
+msgid "Pinterest link"
+msgstr ""
+
+#: single.php:21 image.php:15
+msgid "Post navigation"
+msgstr ""
+
+#: includes/functions.php:210
+msgid "Proudly powered by"
+msgstr ""
+
+#: includes/functions.php:328
+msgid "Read more &#8250;"
+msgstr ""
+
+#: includes/customizer.php:151
+msgid "Remove Copyright Text?"
+msgstr ""
+
+#: includes/customizer.php:110
+msgid "Remove Logo?"
+msgstr ""
+
+#: includes/customizer.php:596
+msgid "Remove Search Box?"
+msgstr ""
+
+#: includes/customizer.php:124
+msgid "Remove Tagline?"
+msgstr ""
+
+#: includes/functions.php:549
+msgid "Reply <span>&darr;</span>"
+msgstr ""
+
+#: includes/theme-page.php:83
+msgid "Right-To-Left (RTL) Support"
+msgstr ""
+
+#. Author of the theme
+#: includes/functions.php:223
+msgid "Sampression"
+msgstr ""
+
+#: includes/customizer-theme-info.php:64
+msgid "Sampression Important Links"
+msgstr ""
+
+#. Name of the theme
+msgid "Sampression Lite"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"Sampression Lite is a free, Pinterest inspired responsive WordPress theme "
+"with an attractive masonry blog layout. The theme has a clean and "
+"lightweight design. It boasts of user-friendly customizing options making it "
+"very easy to customize your blog’s header, menus, widgets, background color, "
+"and images. The theme is also SEO friendly and translation ready, allowing "
+"you the freedom of expressing in your native language. Get free support at "
+"http://sampression.com/support and View live demo site at http://www.demo."
+"sampression.com/sampression-lite"
+msgstr ""
+
+#: includes/theme-page.php:19
+msgid "Sampression Theme"
+msgstr ""
+
+#: searchform.php:11
+msgid "Search by Keyword"
+msgstr ""
+
+#: includes/theme-page.php:71
+msgid "Search Engine Optimised"
+msgstr ""
+
+#: searchform.php:10
+msgid "Search for:"
+msgstr ""
+
+#: includes/customizer.php:582
+msgid "Search Option"
+msgstr ""
+
+#: search.php:25
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: includes/customizer.php:298
+msgid "Select your desired font for the body text."
+msgstr ""
+
+#: includes/customizer.php:250
+msgid "Select your desired font for the Title."
+msgstr ""
+
+#: header.php:252 header.php:282
+msgid "Show All"
+msgstr ""
+
+#: includes/customizer.php:71
+msgid "Site Identity"
+msgstr ""
+
+#: includes/customizer.php:380
+msgid "Social Media"
+msgstr ""
+
+#: 404.php:22
+msgid "Sorry but the page you looking for cannot be found."
+msgstr ""
+
+#: searchform.php:13
+msgctxt "submit button"
+msgid "Search"
+msgstr ""
+
+#: includes/customizer-theme-info.php:33
+msgid "Support"
+msgstr ""
+
+#: includes/customizer.php:637
+msgid "Support Ticket"
+msgstr ""
+
+#: tag.php:15
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+
+#: includes/theme-page.php:61
+msgid ""
+"The Sampression Lite Theme Customizer is packed full of design controls and "
+"features for setting up the styles of your website, including header styles, "
+"typography styles, footer widgets , default colors and so much more.."
+msgstr ""
+
+#: includes/theme-page.php:59
+msgid "Theme Customizer"
+msgstr ""
+
+#: demo/demo.php:17
+msgid "Theme Demo Content"
+msgstr ""
+
+#: includes/customizer.php:635
+msgid "Theme Documentation"
+msgstr ""
+
+#: includes/customizer-theme-info.php:29
+msgid "Theme Info"
+msgstr ""
+
+#: comments.php:17
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: includes/functions.php:111
+msgid "Top Menu"
+msgstr ""
+
+#: includes/theme-page.php:89
+msgid "Translation Ready"
+msgstr ""
+
+#: includes/customizer.php:485
+msgid "Tumblr link"
+msgstr ""
+
+#: includes/customizer.php:427
+msgid "Twitter link"
+msgstr ""
+
+#: includes/customizer.php:227
+msgid "Typography"
+msgstr ""
+
+#: includes/customizer.php:636
+msgid "UPGRADE TO PRO"
+msgstr ""
+
+#: includes/theme-page.php:67
+msgid ""
+"Upload your custom logo & favicon with a few simple clicks. If you are just "
+"getting started, our theme also supports text-based logos."
+msgstr ""
+
+#: includes/customizer.php:182
+msgid "Use Background as Cover"
+msgstr ""
+
+#: includes/theme-page.php:37
+msgid ""
+"Using the WordPress Customizer you can easily customize every aspect of the "
+"theme."
+msgstr ""
+
+#: single.php:60 loop.php:78 image.php:56 includes/functions.php:641
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: includes/customizer.php:569
+msgid "Vimeo link"
+msgstr ""
+
+#: includes/theme-page.php:43
+msgid "Visit"
+msgstr ""
+
+#: includes/theme-page.php:32
+msgid ""
+"We hope you will enjoy using Sampression Lite, as much as we enjoyed "
+"creating it."
+msgstr ""
+
+#: includes/theme-page.php:79
+msgid ""
+"We know that your website needs to be readable on all devices. Sampression "
+"Theme is fully responsive and looks great all the way down to even the "
+"smallest mobile devices and screen sizes."
+msgstr ""
+
+#: includes/customizer.php:95
+msgid "We recommend logo sizes within 220px x 120px."
+msgstr ""
+
+#: includes/theme-page.php:31
+msgid "Welcome to Sampression Lite"
+msgstr ""
+
+#: includes/functions.php:212 includes/functions.php:213
+msgid "WordPress"
+msgstr ""
+
+#: archive.php:33
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: includes/customizer.php:371
+msgid ""
+"You can add/remove social media links, search bar and header image here."
+msgstr ""
+
+#: includes/functions.php:559
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: includes/customizer.php:449
+msgid "Youtube link"
+msgstr ""
