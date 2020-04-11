@@ -201,10 +201,7 @@ if ( ! function_exists( 'sampression_footer' ) ) {
 			?>
         </div>
         <div class="alignright credit">
-			<?php esc_html_e( 'A theme by', 'sampression-lite' ); ?> <a
-                    href="<?php echo esc_url( __( 'https://www.sampression.com/', 'sampression-lite' ) ); ?>"
-                    target="_blank"
-                    title="<?php esc_attr_e( 'Sampression', 'sampression-lite' ); ?>"><?php esc_html_e( 'Sampression', 'sampression-lite' ); ?></a>
+			<?php esc_html_e( 'A theme by', 'sampression-lite' ); ?> <a href="<?php echo esc_url( __( 'https://www.sampression.com/', 'sampression-lite' ) ); ?>"target="_blank"title="<?php esc_attr_e( 'Sampression', 'sampression-lite' ); ?>"><?php esc_html_e( 'Sampression', 'sampression-lite' ); ?></a>
         </div>
 		<?php
 	}
@@ -221,13 +218,11 @@ if ( ! function_exists( 'sampression_js' ) ) {
 		// JS at the bottom for fast page loading.
 		wp_enqueue_script( 'sampression-modernizer', get_template_directory_uri() . '/lib/js/modernizr.custom.min.js', '', '2.6.2', false );
 		wp_enqueue_script( 'sampression-script', get_template_directory_uri() . '/lib/js/scripts.js', array( 'jquery' ), '1.1', true );
-		wp_enqueue_script( 'jquery-script', get_template_directory_uri() . '/lib/js/jquery.3.3.1.js', '', '3.3.1', false );
 		wp_enqueue_script( 'isotope', get_template_directory_uri() . '/lib/js/isotope.pkgd.min.js', '', '', false );
 		wp_enqueue_script( 'isotope-init', get_template_directory_uri() . '/lib/js/isotope.js', '', '', false );
-
 	}
-
 }
+
 add_action( 'wp_enqueue_scripts', 'sampression_js' );
 
 /*=======================================================================
@@ -574,7 +569,7 @@ function sampression_filter_cat_callback() {
 					sprintf( '<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>',
 						esc_url( get_permalink() ),
 						esc_attr( get_the_time() ),
-						get_the_date( 'd M Y' )
+						get_the_date( get_option( 'date_format' ) )
 					),
 					sprintf( '<div class="post-author col"><span class="ico hello">Author</span><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></div>',
 						esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),

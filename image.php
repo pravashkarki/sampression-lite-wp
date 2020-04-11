@@ -42,7 +42,7 @@ get_header(); ?>
 						sprintf( '<a href="%4$s" title="%2$s" rel="bookmark">%3$s</a>',
 							esc_url( get_permalink() ),
 							esc_attr( get_the_time() ),
-							get_the_date( 'M d, Y' ),
+							get_the_date( get_option( 'date_format' ) ),
 							esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) )
 						) );
 					if ( comments_open() && get_comments_number() > 0 ) : ?>
