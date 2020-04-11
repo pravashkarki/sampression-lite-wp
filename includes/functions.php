@@ -594,16 +594,15 @@ function sampression_filter_cat_callback() {
 						<?php comments_popup_link( __( '0', 'sampression-lite' ), __( '1', 'sampression-lite' ), __( '%', 'sampression-lite' ) ); ?>
             </span>
 				<?php endif; ?>
-
-
             </div>
+
             <div class="meta">
                 <div class="cats"><?php printf( __( '<span class="ico">Categories</span><div class="overflow-hidden cat-listing">%s</div>', 'sampression-lite' ), get_the_category_list( ', ' ) ); ?></div>
             </div>
         </article>
 	<?php
 	endwhile;
-	wp_reset_postdate();
+	wp_reset_postdata();
 	die();
 }
 
