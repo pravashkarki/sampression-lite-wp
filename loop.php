@@ -60,10 +60,10 @@ foreach ( ( get_the_category() ) as $category ) {
 		<?php
 		printf( __( '<time class="col posted-on genericon-day" datetime="2011-09-28">%2$s</time> ', 'sampression-lite' ), 'meta-prep meta-prep-author',
 			sprintf( '<a href="%4$s" title="%2$s" rel="bookmark">%3$s</a>',
-				get_permalink(),
+				esc_url( get_permalink() ),
 				esc_attr( get_the_time() ),
 				get_the_date( 'M d, Y' ),
-				get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) )
+				esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) )
 			) );
 		?>
 		<?php if ( comments_open() && get_comments_number() > 0 ) : ?>
@@ -74,7 +74,7 @@ foreach ( ( get_the_category() ) as $category ) {
 	</div>
 	<div class="meta clearfix">
 		<?php printf( '<div class="post-author genericon-user col"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></div>',
-			get_author_posts_url( get_the_author_meta( 'ID' ) ),
+			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 			sprintf( esc_attr__( 'View all posts by %s', 'sampression-lite' ), get_the_author() ),
 			get_the_author()
 		); ?>

@@ -27,7 +27,7 @@ get_header(); ?>
 
 				<header class="post-header">
 					<h2 class="post-title">
-						<a href="<?php echo get_permalink( $post->post_parent ); ?>" title="<?php esc_attr( printf( 'Return to %s', get_the_title( $post->post_parent ) ) ); ?>">
+						<a href="<?php echo esc_url( get_permalink( $post->post_parent ) ); ?>" title="<?php esc_attr( printf( 'Return to %s', get_the_title( $post->post_parent ) ) ); ?>">
                             <?php printf( '%s', get_the_title( $post->post_parent ) ); ?>
 						</a>:
 						<span class="img-title">
