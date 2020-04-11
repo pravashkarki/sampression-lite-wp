@@ -5,7 +5,7 @@ Theme URI: https://sampression.com/themes/sampression-lite/
 Author: Sampression
 Author URI: https://www.sampression.com
 
-Version: 2.2.2
+Version: 2.2.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -41,7 +41,7 @@ Tags: two-columns, four-columns, left-sidebar, right-sidebar, flexible-header, c
  = Upload the logo.
 
 6. Change Background
- = Login to your wp-admin are and go to Appearance -> Customize -> General Settings -> 
+ = Login to your wp-admin are and go to Appearance -> Customize -> General Settings ->
  = You can upload background image or set background colour here.
 
 7. Change display Font-face
@@ -67,36 +67,6 @@ Tags: two-columns, four-columns, left-sidebar, right-sidebar, flexible-header, c
 
 = Fonts & Icons =
  = Genericons: https://github.com/Automattic/Genericons/blob/master/LICENSE.txt
- = Google Web Fonts: Roboto+Slab (https://www.google.com/fonts/specimen/Roboto+Slab) is licensed under Apache License, version 2.0 (https://www.apache.org/licenses/LICENSE-2.0.html)
- = Google Web Fonts: Roboto (https://www.google.com/fonts/specimen/Roboto) is licensed under Apache License, version 2.0 (https://www.apache.org/licenses/LICENSE-2.0.html)
- = Google Web Fonts: Playfair+Display (https://www.google.com/fonts/specimen/Playfair+Display) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Work+Sans (https://www.google.com/fonts/specimen/Work+Sans) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Alegreya (https://www.google.com/fonts/specimen/Alegreya) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Alegreya+Sans (https://www.google.com/fonts/specimen/Alegreya+Sans) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Fira+Sans (https://www.google.com/fonts/specimen/Fira+Sans) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Droid+Sans (https://www.google.com/fonts/specimen/Droid+Sans) is licensed under Apache License, version 2.0 (https://www.apache.org/licenses/LICENSE-2.0.html)
- = Google Web Fonts: Source+Sans+Pro (https://www.google.com/fonts/specimen/Source+Sans+Pro) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Source+Serif+Pro (https://www.google.com/fonts/specimen/Source+Serif+Pro) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Lora (https://www.google.com/fonts/specimen/Lora) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Neuton (https://www.google.com/fonts/specimen/Neuton) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Poppins (https://www.google.com/fonts/specimen/Poppins) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Karla (https://www.google.com/fonts/specimen/Karla) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Merriweather (https://www.google.com/fonts/specimen/Merriweather) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Open+Sans (https://www.google.com/fonts/specimen/Open+Sans) is licensed under Apache License, version 2.0 (https://www.apache.org/licenses/LICENSE-2.0.html)
- = Google Web Fonts: Lato (https://www.google.com/fonts/specimen/Lato) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Droid+Serif (https://www.google.com/fonts/specimen/Droid+Serif) is licensed under Apache License, version 2.0 (https://www.apache.org/licenses/LICENSE-2.0.html)
- = Google Web Fonts: Archivo+Narrow (https://www.google.com/fonts/specimen/Archivo+Narrow) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Libre+Baskerville (https://www.google.com/fonts/specimen/Libre+Baskerville) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Crimson+Text (https://www.google.com/fonts/specimen/Crimson+Text) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Montserrat (https://www.google.com/fonts/specimen/Montserrat) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Chivo (https://www.google.com/fonts/specimen/Chivo) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Old+Standard+TT (https://www.google.com/fonts/specimen/Old+Standard+TT) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Domine (https://www.google.com/fonts/specimen/Domine) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Varela+Round (https://www.google.com/fonts/specimen/Varela+Round) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Bitter (https://www.google.com/fonts/specimen/Bitter) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Cardo (https://www.google.com/fonts/specimen/Cardo) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: Arvo (https://www.google.com/fonts/specimen/Arvo) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
- = Google Web Fonts: PT+Serif (https://www.google.com/fonts/specimen/PT+Serif) is licensed under SIL Open Font License, 1.1 (https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 
 = CSS =
  = Skeleton: https://github.com/dhg/Skeleton/blob/master/LICENSE.md
@@ -124,7 +94,7 @@ Version 1.3
  = Supports WP-Pagenavi plugin.
  = Supports dropdown menu.
  = Theme Options layout enhance.
- 
+
 Version 1.3.2
 = Fixed CSS related bugs, especially on the IE browsers < version 9.x
 = Fixed "Featured Image Height" issue
@@ -133,7 +103,7 @@ Version 1.3.2
 = Fixed "Notice" issue: Notice doesn't appear when there are no sticky posts
 = Fixed "Tags Alignment" issue: Before the fix, tags didn't align when there were many tags and categories
 = Fixed “Image Alignment” issue: Image inserted from editor are automatically aligned
-= Fixed "Default About Me Widget" issue: Default "About Me Widget" on the bottom of the page can now be removed 
+= Fixed "Default About Me Widget" issue: Default "About Me Widget" on the bottom of the page can now be removed
 = Fixed "Responsive Design" related issues
 
 = Fixed "Tick Mark" issue: The "Tick Mark" icon that appeared while hovering over categories filter in the primary navigation bar doesn't appear anymore when unchecked
@@ -155,14 +125,14 @@ Version 1.3.2
 = Removed default logo, favicon and apple touch icons
 
 = Few sampression hooks ( sampression_meta, sampression_title, sampression_favicon, sampression_styles, sampression_links, sampression_logo, etc. ) are introduced.
- 
- 
+
+
 Version 1.3.2.1
 = Fixed: automatic widget glitch on 'bottom-widget-3'
- 
+
 Version 1.4
 = Added: Sampression Lite is now retina ready
-= Added: Added rtl.css for RTL(right-to-left) support 
+= Added: Added rtl.css for RTL(right-to-left) support
 = Added: Sampresson Lite now supports custom background image and color
 = Added: Sampresson Lite now supports custom header image and color
 = Added: Apple touch icon of size 144x144 for high resolution iPads with option on admin panel
@@ -252,7 +222,7 @@ Version 2.2
 = Added: Customizer Important Links
 = Added: Demo Data Import
 = Added: TGM Plugin Activation
-= Fixed: Images Optimized 
+= Fixed: Images Optimized
 
 Version 2.2.1
 = Fixed: Style Sheet Updated
@@ -260,6 +230,10 @@ Version 2.2.1
 Version 2.2.2
 = Removed: Sampression Pro content in theme page.
 = Removed: Sampression Pro link in customizer.
+
+Version 2.2.3
+= Fixed: Minor bug fixes.
+= Removed: Removed demo files.
 
  == Child Theme Support ===
  Sampresson Lite supports child themes. Please use child themes for customization of "Sampression Lite". For further reading: https://codex.wordpress.org/Child_Themes.
