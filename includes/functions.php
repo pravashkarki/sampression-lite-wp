@@ -234,7 +234,7 @@ add_filter( 'sampression_credits', 'sampression_footer' );
 if ( ! function_exists( 'sampression_js' ) ) {
 
 	function sampression_js() {
-		// JS at the bottom for fast page loading. 
+		// JS at the bottom for fast page loading.
 		wp_enqueue_script( 'sampression-modernizer', get_template_directory_uri() . '/lib/js/modernizr.custom.min.js', '', '2.6.2', false );
 		wp_enqueue_script( 'sampression-script', get_template_directory_uri() . '/lib/js/scripts.js', array( 'jquery' ), '1.1', true );
 		wp_enqueue_script( 'jquery-script', get_template_directory_uri() . '/lib/js/jquery.3.3.1.js', '', '3.3.1', false );
@@ -303,7 +303,7 @@ endif;
  * Pings (Trackbacks/Pingbacks)
  */
 function sampression_comment_list_pings( $comment ) {
-	$GLOBALS['comment'] = $comment;
+	// $GLOBALS['comment'] = $comment;
 	?>
     <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>"><?php echo comment_author_link(); ?></li>
 <?php }
@@ -495,7 +495,7 @@ add_action( 'widgets_init', 'sampression_default_widgets', 11 );
 if ( ! function_exists( 'sampression_comment' ) ) :
 
 	function sampression_comment( $comment, $args, $depth ) {
-		$GLOBALS['comment'] = $comment;
+		// $GLOBALS['comment'] = $comment;
 		switch ( $comment->comment_type ) :
 			case 'pingback' :
 			case 'trackback' :
