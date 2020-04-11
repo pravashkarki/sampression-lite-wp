@@ -44,6 +44,7 @@ get_header(); ?>
 			 */
 			rewind_posts();
 			?>
+
 			<div id="post-listing" class="clearfix">
 				<!-- Corner Stamp: It will always remaing to the right top of the page -->
 				<section class="corner-stamp post columns three item">

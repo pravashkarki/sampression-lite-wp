@@ -38,6 +38,8 @@ do_action( 'sampression_custom_header_style' );
 </head>
 
 <body <?php body_class( 'top' ); ?>>
+<?php do_action( 'wp_body_open' ); ?>
+
 <header id="header">
 	<div class="container">
 		<div class="columns five">
@@ -49,7 +51,7 @@ do_action( 'sampression_custom_header_style' );
 				<div class="logo-txt">
 					<h1 class="site-title" id="site-title">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-							<?php echo bloginfo( 'name' ); ?>
+							<?php bloginfo( 'name' ); ?>
 						</a>
 					</h1>
 					<?php if ( 1 !== get_theme_mod( 'sampression_remove_tagline' ) ) { ?>
@@ -225,7 +227,7 @@ do_action( 'sampression_custom_header_style' );
 		if ( ! empty( $header_image ) ) :
 			?>
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt=""/>
+				<img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo absint( get_custom_header()->width ); ?>" height="<?php echo absint( get_custom_header()->height ); ?>" alt=""/>
 			</a>
 		<?php endif; ?>
 	</div>

@@ -28,14 +28,14 @@ get_header(); ?>
 			?>
 			<div class="three columns shuffle__sizer"></div>
 		</div>
-		<!-- #post-listing --> 
+		<!-- #post-listing -->
 		<?php
 		sampression_content_nav( 'nav-below' );
 	else :
 	?>
 		<article id="post-0" class="no-results not-found">
 			<header class="entry-header">
-				<h2 class="entry-title"><?php echo esc_html__( 'Nothing Found', 'sampression-lite' ); ?></h2>
+				<h2 class="entry-title"><?php esc_html_e( 'Nothing Found', 'sampression-lite' ); ?></h2>
 			</header>
 			<!-- .entry-header -->
 			<div class="entry-content">

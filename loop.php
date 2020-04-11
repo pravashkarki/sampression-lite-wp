@@ -30,7 +30,7 @@ foreach ( ( get_the_category() ) as $category ) {
 } ?>]'>
 
 	<h3 class="post-title">
-		<a href="<?php the_permalink() ?>" title="<?php echo esc_attr( get_the_title() ); ?>"
+		<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"
 		   rel="bookmark"><?php the_title(); ?>
 		</a>
 	</h3>
@@ -38,8 +38,8 @@ foreach ( ( get_the_category() ) as $category ) {
 	<?php if ( has_post_thumbnail() ) {
 		$thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id(), 'featured-thumbnail' );
 		?>
-		<div class="featured-img" style="height: <?php echo $thumbnail[2] ?>px;">
-			<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( the_title_attribute( 'echo=0' ) ); ?>">
+		<div class="featured-img" style="height: <?php echo esc_attr( $thumbnail[2] ); ?>px;">
+			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 				<?php the_post_thumbnail( 'featured-thumbnail', '', true ); ?>
 			</a>
 		</div>
@@ -47,12 +47,6 @@ foreach ( ( get_the_category() ) as $category ) {
 	<?php } ?>
 	<div class="entry clearfix">
 		<?php the_excerpt(); ?>
-		<?php wp_link_pages( array(
-				'before' => '<div class="page-link"><span>' . __( 'Pages:', 'sampression-lite' ) . '</span>',
-				'after'  => '</div>',
-			)
-		);
-		?>
 	</div>
 	<!-- .entry -->
 

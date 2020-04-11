@@ -55,7 +55,7 @@ get_header(); ?>
 					</div>
 					<header>
 						<h3 class="widget-title">
-							<?php echo esc_html( 'Categories', 'sampression-lite' ); ?>
+							<?php echo esc_html__( 'Categories', 'sampression-lite' ); ?>
 						</h3>
 					</header>
 					<div class="entry">

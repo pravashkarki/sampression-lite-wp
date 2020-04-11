@@ -43,7 +43,7 @@ get_header(); ?>
 							get_permalink(),
 							esc_attr( get_the_time() ),
 							get_the_date( 'M d, Y' ),
-							get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) )
+							esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) )
 						) );
 					if ( comments_open() && get_comments_number() > 0 ) : ?>
 						<span class="col count-comment genericon-comment">
@@ -52,7 +52,7 @@ get_header(); ?>
 					<?php
 					endif;
 					printf( '<div class="post-author genericon-user col"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></div>',
-						get_author_posts_url( get_the_author_meta( 'ID' ) ),
+						esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 						sprintf( esc_attr__( 'View all posts by %s', 'sampression-lite' ), get_the_author() ),
 						get_the_author()
 					);
