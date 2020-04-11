@@ -40,7 +40,7 @@ get_header(); ?>
 					<?php
 					printf( __( '<time class="col posted-on genericon-day" datetime="2011-09-28">%2$s</time> ', 'sampression-lite' ), 'meta-prep meta-prep-author',
 						sprintf( '<a href="%4$s" title="%2$s" rel="bookmark">%3$s</a>',
-							get_permalink(),
+							esc_url( get_permalink() ),
 							esc_attr( get_the_time() ),
 							get_the_date( 'M d, Y' ),
 							esc_url( get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ) )

@@ -287,7 +287,6 @@ endif;
  * Pings (Trackbacks/Pingbacks)
  */
 function sampression_comment_list_pings( $comment ) {
-	// $GLOBALS['comment'] = $comment;
 	?>
     <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>"><?php echo comment_author_link(); ?></li>
 <?php }
@@ -309,7 +308,7 @@ add_filter( 'excerpt_length', 'sampression_excerpt_length' );
  * Returns a "Read more" link for excerpts
  */
 function sampression_read_more() {
-	return ' <span class="read-more"><a href="' . get_permalink() . '">' . __( 'Read more &#8250;', 'sampression-lite' ) . '</a></span>';
+	return ' <span class="read-more"><a href="' . esc_url( get_permalink() ) . '">' . __( 'Read more &#8250;', 'sampression-lite' ) . '</a></span>';
 }
 
 /**
@@ -378,23 +377,6 @@ if ( ! function_exists( 'sampression_cat_count' ) ) {
 }
 
 /*=======================================================================
- * Run function during a themes initialization. It clear all widgets
- *=======================================================================*/
-
-function sampression_widget_reset() {
-	if ( isset( $_GET['activated'] ) ) {
-		add_filter( 'sidebars_widgets', 'disable_all_widgets' );
-		function disable_all_widgets( $sidebars_widgets ) {
-			$sidebars_widgets = array( false );
-
-			return $sidebars_widgets;
-		}
-	}
-}
-
-add_action( 'setup_theme', 'sampression_widget_reset' );
-
-/*=======================================================================
  * WordPress Widgets start right here.
  *=======================================================================*/
 if ( ! function_exists( 'sampression_widgets_init' ) ) :
@@ -442,30 +424,6 @@ if ( ! function_exists( 'sampression_widgets_init' ) ) :
 	}
 endif;
 add_action( 'widgets_init', 'sampression_widgets_init' );
-
-function sampression_default_widgets() {
-	$sidebars_widgets = get_option( 'sidebars_widgets' );
-	if ( ! get_option( 'samp_auto_widget_installed', false ) ) {
-
-		if ( empty( $sidebars_widgets['bottom-widget-3'] ) ) {    //if there are no widgets on the 'bottom-widget-3'
-
-			$id                                  = count( $sidebars_widgets ) + 1;
-			$sidebars_widgets['bottom-widget-3'] = array( "text-" . $id );
-
-			$ops        = get_option( 'widget_text' );
-			$ops[ $id ] = array(
-				'title' => 'About me automatic widget',
-				'text'  => 'This is an automatic widget added on Third Bottom Widget box (Bottom Widget 3). To edit please go to Appearance > Widgets and choose 3rd widget from the top in area second called Bottom Widget 3. Title is also manageable from widgets as well.',
-			);
-			update_option( 'widget_text', $ops );
-			update_option( 'sidebars_widgets', $sidebars_widgets );
-		}
-		update_option( 'samp_auto_widget_installed', true );
-
-	}
-}
-
-add_action( 'widgets_init', 'sampression_default_widgets', 11 );
 
 /*=======================================================================
  * Template for comments and pingbacks.
@@ -570,7 +528,7 @@ function sampression_show_logo() {
 		?>
         <a href="<?php echo home_url( '/' ); ?>"
            title="<?php echo esc_attr( ucwords( get_bloginfo( 'name', 'display' ) ) ); ?>" rel="home" id="logo-area">
-            <img class="logo-img" src="<?php echo $logo; ?>" alt="<?php bloginfo( 'name' ); ?>">
+            <img class="logo-img" src="<?php echo esc_url( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
         </a>
 		<?php
 	}
@@ -596,13 +554,11 @@ function sampression_filter_cat_callback() {
 	while ( have_posts() ) : the_post();
 		?>
         <article id="post-<?php the_ID(); ?>" class="post item columns four <?php echo sampression_cat_slug(); ?> ">
-            <h3 class="post-title"><a href="<?php the_permalink() ?>" title="<?php echo esc_attr( get_the_title() ); ?>"
-                                      rel="bookmark"><?php the_title(); ?></a></h3>
+            <h3 class="post-title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 
 			<?php if ( has_post_thumbnail() ) { ?>
                 <div class="featured-img">
-                    <a href="<?php the_permalink(); ?>"
-                       title="<?php echo esc_attr( the_title_attribute( 'echo=0' ) ); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
                 </div>
                 <!-- .featured-img -->
 			<?php } ?>
@@ -616,12 +572,12 @@ function sampression_filter_cat_callback() {
 				<?php
 				printf( __( '%3$s <time class="col" datetime="2011-09-28"><span class="ico">Published on</span>%2$s</time> ', 'sampression-lite' ), 'meta-prep meta-prep-author',
 					sprintf( '<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>',
-						get_permalink(),
+						esc_url( get_permalink() ),
 						esc_attr( get_the_time() ),
 						get_the_date( 'd M Y' )
 					),
 					sprintf( '<div class="post-author col"><span class="ico hello">Author</span><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></div>',
-						get_author_posts_url( get_the_author_meta( 'ID' ) ),
+						esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 						sprintf( esc_attr__( 'View all posts by %s', 'sampression-lite' ), get_the_author() ),
 						get_the_author()
 					)
