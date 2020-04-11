@@ -12,28 +12,6 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function sampression_customize_register( $wp_customize ) {
-
-	class Sampression_Theme_Support extends WP_Customize_Control {
-
-		protected function render_content() {
-			switch ( $this->type ) {
-				case 'textarea':
-					?>
-					<label>
-						<span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-						<span class="description customize-control-description"><?php echo esc_html( $this->description ); ?></span>
-						<textarea rows="20" <?php $this->link(); ?>><?php echo esc_textarea( $this->value() ); ?></textarea>
-					</label>
-					<?php
-					break;
-				case 'description' :
-					echo '<p class="description">' . $this->description . '</p>';
-					break;
-			}
-		}
-	}
-
-
 	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 	/**
@@ -102,7 +80,7 @@ function sampression_customize_register( $wp_customize ) {
 	/**
 	 * Remove Logo - Setting
 	 */
-	$wp_customize->add_setting( 'sampression_remove_logo', array( 'sanitize_callback' => 'sampression_sanitize_text' ) );
+	$wp_customize->add_setting( 'sampression_remove_logo', array( 'sanitize_callback' => 'sampression_sanitize_checkbox' ) );
 	$wp_customize->add_control(
 		'sampression_remove_logo',
 		array(
@@ -116,7 +94,7 @@ function sampression_customize_register( $wp_customize ) {
 	/**
 	 * Remove Tagline - Setting
 	 */
-	$wp_customize->add_setting( 'sampression_remove_tagline', array( 'sanitize_callback' => 'sampression_sanitize_text' ) );
+	$wp_customize->add_setting( 'sampression_remove_tagline', array( 'sanitize_callback' => 'sampression_sanitize_checkbox' ) );
 	$wp_customize->add_control(
 		'sampression_remove_tagline',
 		array(
@@ -130,7 +108,7 @@ function sampression_customize_register( $wp_customize ) {
 	/*
 	 * Copyright text Setting
 	 */
-	$wp_customize->add_setting( 'sampression_copyright_text', array( 'sanitize_callback' => 'sampression_sanitize_text' ) );
+	$wp_customize->add_setting( 'sampression_copyright_text', array( 'sanitize_callback' => 'sanitize_textarea_field' ) );
 	$wp_customize->add_control(
 		'sampression_copyright_text',
 		array(
@@ -144,7 +122,7 @@ function sampression_customize_register( $wp_customize ) {
 	/*
 	 * Remove Copyright Text Setting
 	 */
-	$wp_customize->add_setting( 'sampression_remove_copyright_text', array( 'sanitize_callback' => 'sampression_sanitize_text' ) );
+	$wp_customize->add_setting( 'sampression_remove_copyright_text', array( 'sanitize_callback' => 'sampression_sanitize_checkbox' ) );
 	$wp_customize->add_control(
 		'sampression_remove_copyright_text',
 		array(
@@ -588,7 +566,7 @@ function sampression_customize_register( $wp_customize ) {
 	/*
 	 * Remove search box Setting
 	 */
-	$wp_customize->add_setting( 'sampression_remove_search', array( 'sanitize_callback' => 'sampression_sanitize_text' ) );
+	$wp_customize->add_setting( 'sampression_remove_search', array( 'sanitize_callback' => 'sampression_sanitize_checkbox' ) );
 	$wp_customize->add_control(
 		'sampression_remove_search',
 		array(
@@ -666,7 +644,7 @@ function sampression_sanitize_html( $input ) {
 
 }
 
-//Sanitizes Fonts 
+//Sanitizes Fonts
 function sampression_sanitize_fonts( $input ) {
 	$valid = array(
 		'Roboto+Slab:400,700=serif'                              => 'Roboto Slab - Default Header',
@@ -711,18 +689,6 @@ function sampression_sanitize_fonts( $input ) {
 function sampression_sanitize_checkbox( $checked ) {
 	// Boolean check.
 	return ( ( isset( $checked ) && true == $checked ) ? true : false );
-}
-
-function sampression_sanitize_pro_version( $input ) {
-	return $input;
-}
-
-function sampression_sanitize_widgets( $input ) {
-	return $input;
-}
-
-function sampression_sanitize_text( $input ) {
-	return wp_kses_post( force_balance_tags( $input ) );
 }
 
 add_action( 'customize_register', 'sampression_customize_register' );

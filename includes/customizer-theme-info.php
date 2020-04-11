@@ -23,7 +23,6 @@ if ( ! function_exists( 'sampression_add_info_customizer' ) ) {
 			public function render_content() {
 
 				$important_links = array(
-					
 					'theme-info'    => array(
 						'link' => esc_url( 'https://www.sampression.com/themes/sampression-lite/' ),
 						'text' => esc_html__( 'Theme Info', 'sampression-lite' ),
@@ -40,7 +39,7 @@ if ( ! function_exists( 'sampression_add_info_customizer' ) ) {
 						'link' => esc_url( 'https://www.demo.sampression.com/sampression-lite/' ),
 						'text' => esc_html__( 'Live Theme Demo', 'sampression-lite' ),
 					),
-					'demo'          => array(
+					'forum'          => array(
 						'link' => esc_url( 'https://www.sampression.com/forums/' ),
 						'text' => esc_html__( 'Community Forum', 'sampression-lite' ),
 					),
@@ -50,7 +49,7 @@ if ( ! function_exists( 'sampression_add_info_customizer' ) ) {
 				foreach ( $important_links as $important_link ) {?>
 					<p class="btn-wrap <?php if( 0 == $count ){ echo esc_attr( $pro ); } ?> ">
 						<a target="_blank" href="<?php echo esc_url( $important_link['link'] ); ?>">
-							<?php echo esc_attr( $important_link['text'] );?>
+							<?php echo esc_html( $important_link['text'] );?>
 						</a>
 					</p>
 					<?php
