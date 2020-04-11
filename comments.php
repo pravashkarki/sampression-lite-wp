@@ -29,12 +29,31 @@ endif;
 ?>
 
 <?php if ( have_comments() ) : ?>
+	<?php $sampression_comment_count = absint( get_comments_number() ); ?>
+
 	<h2 id="comments-title">
 		<?php
-		printf( esc_html( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'sampression-lite' ),
-			number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' ) );
+		if ( ! have_comments() ) {
+			esc_html_e( 'Leave a comment', 'sampression-lite' );
+		} elseif ( 1 === $sampression_comment_count ) {
+			/* translators: %s: post title */
+			printf( esc_html_x( 'One reply on &ldquo;%s&rdquo;', 'comments title', 'sampression-lite' ), esc_html( get_the_title() ) );
+		} else {
+			echo sprintf(
+				/* translators: 1: number of comments, 2: post title */
+				_nx(
+					'%1$s reply on &ldquo;%2$s&rdquo;',
+					'%1$s replies on &ldquo;%2$s&rdquo;',
+					$sampression_comment_count,
+					'comments title',
+					'sampression-lite'
+				),
+				number_format_i18n( $sampression_comment_count ),
+				esc_html( get_the_title() )
+			);
+		}
 		?>
-	</h2>
+	</h2><!-- #comments-title -->
 
 	<?php
 	if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :

@@ -62,7 +62,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 				); ?>
 
 				<div class="cats genericon-category">
-                    <?php printf( __( '%s', 'sampression-lite' ), get_the_category_list( ', ' ) ); ?>
+                    <?php printf( '%s', get_the_category_list( ', ' ) ); ?>
                 </div>
 
 				<?php if ( has_tag() ) { ?>
