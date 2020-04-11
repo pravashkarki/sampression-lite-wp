@@ -546,8 +546,16 @@ function sampression_filter_cat_callback() {
 	$slug    = $_POST['category'];
 	$exc     = $_POST['exclude'];
 	$exclude = explode( '~', $exc );
-	query_posts( array( 'category_name' => $slug, 'post__not_in' => $exclude, 'post_status' => 'publish' ) );
-	while ( have_posts() ) : the_post();
+
+	$qargs = array(
+		'category_name' => $slug,
+		'post__not_in'  => $exclude,
+		'post_status'   => 'publish',
+	);
+
+	$custom_query = new WP_Query( $qargs );
+
+	while ( $custom_query->have_posts() ) : $custom_query->the_post();
 		?>
         <article id="post-<?php the_ID(); ?>" class="post item columns four <?php echo sampression_cat_slug(); ?> ">
             <h3 class="post-title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
@@ -595,7 +603,7 @@ function sampression_filter_cat_callback() {
         </article>
 	<?php
 	endwhile;
-	wp_reset_query();
+	wp_reset_postdate();
 	die();
 }
 
