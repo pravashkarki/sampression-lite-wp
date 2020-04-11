@@ -24,9 +24,9 @@ function sampression_customize_register( $wp_customize ) {
 	 * nav - Navigation
 	 * static_front_page - Static Front Page
 	 */
-	$wp_customize->remove_section( 'colors' );
-	$wp_customize->remove_section( 'header_image' );
-	$wp_customize->remove_section( 'background_image' );
+	// $wp_customize->remove_section( 'colors' );
+	// $wp_customize->remove_section( 'header_image' );
+	// $wp_customize->remove_section( 'background_image' );
 
 	/*********************************************************************
 	 * General Setting - Panel
@@ -136,13 +136,8 @@ function sampression_customize_register( $wp_customize ) {
 	/**
 	 * Background - Section
 	 */
-	$wp_customize->add_section( 'background_image',
-		array(
-			'title'    => __( 'Background Image', 'sampression-lite' ),
-			'priority' => 2,
-			'panel'    => 'sampression_general_setting_panel',
-		)
-	);
+	$wp_customize->get_section( 'background_image' )->panel    = 'sampression_general_setting_panel';
+	$wp_customize->get_section( 'background_image' )->priority = 2;
 
 	/**
 	 * Background Image Cover

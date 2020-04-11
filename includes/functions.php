@@ -76,7 +76,6 @@ if ( ! function_exists( 'sampression_setup' ) ):
 		/**
 		 * This feature enables custom header color and image support for a theme
 		 */
-		//define( 'NO_HEADER_TEXT', true );
 		add_theme_support( 'custom-header', array(
 			// Text color and image (empty to use none).
 			'default-text-color' => 'FE6E41',
@@ -92,7 +91,6 @@ if ( ! function_exists( 'sampression_setup' ) ):
 			'flex-width'         => true,
 			'header-text'        => false
 		) );
-		//define( 'NO_HEADER_TEXT', true );
 
 		/*
 		 * Enable support for custom logo.
@@ -115,20 +113,6 @@ if ( ! function_exists( 'sampression_setup' ) ):
 	}
 
 endif;
-
-/**
- * Redirect to About Theme page after Sampression Lite activation.
- */
-global $pagenow;
-if ( is_admin() && isset( $_GET['activated'] ) && $pagenow == 'themes.php' ) {
-	wp_redirect( admin_url( 'themes.php?page=about-sampression' ) );
-	exit;
-}
-
-/**
- * Add shortcode support in widget_text
- */
-add_filter( 'widget_text', 'do_shortcode' );
 
 /**
  * Sampression theme background image css callback
@@ -200,7 +184,7 @@ if ( ! function_exists( 'sampression_footer' ) ) {
 			<?php
 			if ( get_theme_mod( 'sampression_remove_copyright_text' ) != 1 ) {
 				if ( get_theme_mod( 'sampression_copyright_text' ) ) {
-					echo get_theme_mod( 'sampression_copyright_text' ) . ' ';
+					echo wp_kses_post( get_theme_mod( 'sampression_copyright_text' ) ) . ' ';
 				} else {
 					?>
                     <div class="alignleft copyright"><?php bloginfo( 'name' ); ?> &copy; <?php echo date( 'Y' ); ?>. All
@@ -736,7 +720,7 @@ function sampression_custom_header_style() {
         if ( $text_color = get_theme_mod('title_textcolor') ) {
         ?>
         #site-title a, article.post .post-title a, body.single article.post .post-title, body.page article.post .post-title, h1, h2, h3, h4, h5, h6 {
-            color: <?php echo $text_color; ?>;
+            color: <?php echo esc_attr( $text_color ); ?>;
         }
 
         #site-title a:hover,
@@ -744,7 +728,7 @@ function sampression_custom_header_style() {
         .meta a:hover,
         #top-nav ul a:link,
         .overflow-hidden.cat-listing > a:hover, .url.fn.n:hover, .col > a:hover {
-            color: <?php echo get_theme_mod('body_textcolor') ?>;
+            color: <?php echo esc_attr(get_theme_mod('body_textcolor') ) ?>;
         }
 
         <?php
@@ -773,7 +757,7 @@ function sampression_custom_header_style() {
 	if(get_theme_mod('body_textcolor')) {
 	?>
         body, #site-description {
-            color: <?php echo get_theme_mod('body_textcolor') ?>;
+            color: <?php echo esc_attr( get_theme_mod('body_textcolor') ); ?>;
         }
 
         <?php
@@ -784,25 +768,25 @@ function sampression_custom_header_style() {
         .meta, .meta a,
         #top-nav ul a:link, #top-nav ul a:visited,
         #primary-nav ul.nav-listing li a {
-            color: <?php echo get_theme_mod('link_color') ?>;
+            color: <?php echo esc_attr( get_theme_mod('link_color') ); ?>;
         }
 
         .button, button, input[type="submit"],
         input[type="reset"], input[type="button"] {
-            background-color: <?php echo get_theme_mod('link_color') ?>;
+            background-color: <?php echo esc_attr( get_theme_mod('link_color') ); ?>;
         }
 
         .button:hover, button:hover, input[type="submit"]:hover,
         input[type="reset"]:hover, input[type="button"]:hover {
-            background-color: <?php echo get_theme_mod('body_textcolor') ?>;
+            background-color: <?php echo esc_attr( get_theme_mod('body_textcolor') ); ?>;
         }
 
         #primary-nav ul.nav-listing li a span {
-            background-color: <?php echo get_theme_mod('link_color') ?>;
+            background-color: <?php echo esc_attr( get_theme_mod('link_color') ); ?>;
         }
 
         a:hover {
-            color: <?php echo get_theme_mod('body_textcolor') ?>;
+            color: <?php echo esc_attr( get_theme_mod('body_textcolor') ); ?>;
         }
 
         #top-nav ul li li a,
@@ -817,7 +801,7 @@ function sampression_custom_header_style() {
         #top-nav .sub-menu li:last-child > .sub-menu li a,
         #top-nav .sub-menu li:last-child > .sub-menu li:last-child > .sub-menu li a,
         #top-nav .sub-menu li:last-child > .sub-menu li:last-child > .sub-menu li:last-child > .sub-menu li a {
-            color: <?php echo get_theme_mod('link_color') ?>;
+            color: <?php echo esc_attr( get_theme_mod('link_color') ); ?>;
         }
 
         <?php
@@ -853,15 +837,13 @@ function sampression_register_required_plugins() {
 	$plugins = array(
 
 		array(
-			'name'     => esc_html__( 'Contact Form 7', 'sampression-lite' ),
-			'slug'     => 'contact-form-7',
-			'required' => false,
+			'name' => esc_html__( 'Contact Form 7', 'sampression-lite' ),
+			'slug' => 'contact-form-7',
 		),
 
 		array(
-			'name'     => esc_html__( 'One click demo import', 'sampression-lite' ),
-			'slug'     => 'one-click-demo-import',
-			'required' => false,
+			'name' => esc_html__( 'One click demo import', 'sampression-lite' ),
+			'slug' => 'one-click-demo-import',
 		),
 	);
 	tgmpa( $plugins );
@@ -898,8 +880,7 @@ require_once trailingslashit( get_template_directory() ) . '/includes/customizer
 if ( ! function_exists( 'sampression_admin_enqueue_styles' ) ):
 	function sampression_admin_enqueue_styles() {
 		// Add custom styles for customizer.
-		wp_register_style( 'sampression-customizer-style', get_template_directory_uri() . '/lib/css/admin-style.css', array(), null);
-		wp_enqueue_style( 'sampression-customizer-style' );
+		wp_enqueue_style( 'sampression-customizer-style', get_template_directory_uri() . '/lib/css/admin-style.css', array(), null);
 	}
 endif;
 add_action( 'admin_enqueue_scripts', 'sampression_admin_enqueue_styles' );
