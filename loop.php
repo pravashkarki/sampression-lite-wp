@@ -87,7 +87,7 @@ foreach ( ( get_the_category() ) as $category ) {
 		</div>
 	<?php } ?>
 
-	<?php if ( is_user_logged_in() ) { ?>
+	<?php if ( current_user_can( 'edit_post', get_the_ID() ) ) { ?>
 		<div class="meta">
 			<div class="edit genericon-edit"><?php edit_post_link( __( 'Edit this post', 'sampression-lite' ) ); ?> </div>
 		</div>

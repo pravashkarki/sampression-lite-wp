@@ -69,7 +69,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 					<div class="tags genericon-tag"><?php the_tags( ' ', ', ' ); ?> </div>
 				<?php } ?>
 
-				<?php if ( is_user_logged_in() ) { ?>
+				<?php if ( current_user_can( 'edit_post', get_the_ID() ) ) { ?>
 
 					<div class="edit genericon-edit"><?php edit_post_link( __( 'Edit', 'sampression-lite' ) ); ?> </div>
 

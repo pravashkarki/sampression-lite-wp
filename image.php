@@ -56,7 +56,7 @@ get_header(); ?>
 						sprintf( esc_attr__( 'View all posts by %s', 'sampression-lite' ), get_the_author() ),
 						get_the_author()
 					);
-					if ( is_user_logged_in() ) {
+					if ( current_user_can( 'edit_post', get_the_ID() ) ) {
 						?>
 						<div class="edit genericon-edit"><?php edit_post_link( __( 'Edit', 'sampression-lite' ) ); ?> </div>
 						<?php
