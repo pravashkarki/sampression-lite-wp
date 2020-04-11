@@ -15,16 +15,14 @@
 add_action( 'admin_menu', 'sampression_theme_page' );
 
 function sampression_theme_page() {
-
-	add_theme_page( __( 'Sampression Theme', 'sampression-lite' ), __( 'About Theme', 'sampression-lite' ), 'edit_theme_options', 'about-sampression', 'about_sampression_theme_page' );
-
+	add_theme_page( __( 'Sampression Theme', 'sampression-lite' ), __( 'About Theme', 'sampression-lite' ), 'edit_theme_options', 'about-sampression', 'sampression_render_theme_page' );
 }
 
 /**
  * Sampression lite theme page.
  */
 
-function about_sampression_theme_page() {
+function sampression_render_theme_page() {
 	?>
 	<div class="wrap" style="width:75%">
 		<div>
@@ -36,19 +34,17 @@ function about_sampression_theme_page() {
 			<h4><?php esc_html_e( 'Customize everything from a single place.', 'sampression-lite' ); ?></h4>
 			<p><?php esc_html_e( 'Using the WordPress Customizer you can easily customize every aspect of the theme.', 'sampression-lite' ); ?></p>
 			<p>
-				<a class="button button-primary" href="<?php echo esc_url( 'customize.php?return=%2Fwp-admin%2Fthemes.php%3Fpage%3Dabout-sampression' ); ?>">
+				<a class="button button-primary" href="<?php echo esc_url( wp_customize_url() ); ?>">
 					<?php esc_html_e( 'Go to Customizer', 'sampression-lite' ); ?>
 				</a>
-				<a class="button button-primary" href="<?php echo esc_url( site_url() ); ?>" target="_blank">
+				<a class="button button-primary" href="<?php echo esc_url( home_url( '/' ) ); ?>" target="_blank">
 					<?php esc_html_e( 'Visit', 'sampression-lite' ); ?>
 					<?php bloginfo( 'name' ); ?>
 				</a>
 			</p>
 			<p>
 				<?php esc_html_e( 'For further help, please visit our support page at:', 'sampression-lite' ); ?>
-				<a href="<?php echo esc_url( 'https://www.sampression.com/support/' ); ?>" target="_blank">
-					<?php echo esc_url( 'https://www.sampression.com/support/' ); ?>
-				</a>
+				<a href="https://www.sampression.com/support/" target="_blank">https://www.sampression.com/support/</a>
 			</p>
 		</div>
 		<div>
@@ -90,11 +86,11 @@ function about_sampression_theme_page() {
 					</h3>
 					<?php esc_html_e( 'Material packed with .po & .mo files, which will help you localise the theme for another language. We have expanded the theme localisation to cover all aspect, of our theme.', 'sampression-lite' ); ?>
 				</li>
-			
+
 			</ul>
 			<p style="clear: both; padding-top: 20px;">
-				
-				<a target="_blank" class="button button-primary" href="<?php echo esc_url( 'https://www.demo.sampression.com/sampression-lite/' ); ?>">
+
+				<a target="_blank" class="button button-primary" href="https://www.demo.sampression.com/sampression-lite/">
 					<?php esc_html_e( 'Live Theme Demo', 'sampression-lite' ); ?>
 				</a>
 			</p>

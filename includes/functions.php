@@ -120,8 +120,8 @@ endif;
 if ( ! function_exists( 'sampression_custom_background_cb' ) ):
 
 	function sampression_custom_background_cb() {
-		$background = get_background_image();
-		$color      = get_background_color();
+		$background = esc_url( get_background_image() );
+		$color      = esc_attr( get_background_color() );
 
 		if ( ! $background && ! $color ) {
 			return;
@@ -201,12 +201,13 @@ if ( ! function_exists( 'sampression_footer' ) ) {
 			?>
         </div>
         <div class="alignright credit">
-			<?php esc_html_e( 'A theme by', 'sampression-lite' ); ?> <a href="<?php echo esc_url( __( 'https://www.sampression.com/', 'sampression-lite' ) ); ?>"target="_blank"title="<?php esc_attr_e( 'Sampression', 'sampression-lite' ); ?>"><?php esc_html_e( 'Sampression', 'sampression-lite' ); ?></a>
+			<?php esc_html_e( 'A theme by', 'sampression-lite' ); ?> <a href="<?php echo esc_url( __( 'https://www.sampression.com/', 'sampression-lite' ) ); ?>" target="_blank" title="<?php esc_attr_e( 'Sampression', 'sampression-lite' ); ?>"><?php esc_html_e( 'Sampression', 'sampression-lite' ); ?></a>
         </div>
 		<?php
 	}
 }
-add_filter( 'sampression_credits', 'sampression_footer' );
+
+add_action( 'sampression_credits', 'sampression_footer' );
 
 /*=======================================================================
  * A safe way of adding JavaScripts to a WordPress generated page.

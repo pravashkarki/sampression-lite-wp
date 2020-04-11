@@ -24,9 +24,6 @@ function sampression_customize_register( $wp_customize ) {
 	 * nav - Navigation
 	 * static_front_page - Static Front Page
 	 */
-	// $wp_customize->remove_section( 'colors' );
-	// $wp_customize->remove_section( 'header_image' );
-	// $wp_customize->remove_section( 'background_image' );
 
 	/*********************************************************************
 	 * General Setting - Panel
