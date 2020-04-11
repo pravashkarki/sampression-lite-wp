@@ -522,7 +522,7 @@ function sampression_show_logo() {
 	} elseif ( get_theme_mod( 'sampression_logo', get_option( 'opt_sam_logo' ) ) ) {
 		$logo = get_theme_mod( 'sampression_logo', get_option( 'opt_sam_logo' ) )
 		?>
-        <a href="<?php echo home_url( '/' ); ?>"
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"
            title="<?php echo esc_attr( ucwords( get_bloginfo( 'name', 'display' ) ) ); ?>" rel="home" id="logo-area">
             <img class="logo-img" src="<?php echo esc_url( $logo ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
         </a>

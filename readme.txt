@@ -1,23 +1,18 @@
-== Sampression Lite ==
+=== Sampression Lite ===
 
-Theme Name: Sampression Lite
-Theme URI: https://sampression.com/themes/sampression-lite/
-Author: Sampression
-Author URI: https://www.sampression.com
-
-Version: 2.2.3
+Contributors: sampression
+Requires at least: 5.2
+Requires PHP: 5.6.20
+Tested up to: 5.4
+Stable tag: 2.2.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-*/
 
-== Theme Description ==
+== Description ==
 Sampression Lite is a free, Pinterest inspired responsive WordPress theme with an attractive masonry blog layout. The theme has a clean and lightweight design. It boasts of user-friendly customizing options making it very easy to customize your blog’s header, menus, widgets, background color, and images. The theme is also SEO friendly and translation ready, allowing you the freedom of expressing in your native language. Get free support at https://sampression.com/support and View live demo site at https://www.demo.sampression.com/sampression-lite
 
 == Features ==
 Responsive Design, Cross Browser Compatibility, Custom Code, Custom Logo, Customizer Options, Options to fine tune the theme to your exacting requirement, Easy Customization, Easy Installation, Retina Ready, Search Engine Optimized, Translation Ready, RTL Language Support, Social Media, Typography Options
-
-== Tags ==
-Tags: two-columns, four-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog
 
 == Installation ==
 
@@ -235,5 +230,5 @@ Version 2.2.3
 = Fixed: Minor bug fixes.
 = Removed: Removed demo files.
 
- == Child Theme Support ===
- Sampresson Lite supports child themes. Please use child themes for customization of "Sampression Lite". For further reading: https://codex.wordpress.org/Child_Themes.
+== Child Theme Support ===
+Sampresson Lite supports child themes. Please use child themes for customization of "Sampression Lite". For further reading: https://codex.wordpress.org/Child_Themes.
