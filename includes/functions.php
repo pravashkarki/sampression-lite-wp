@@ -876,13 +876,11 @@ require_once trailingslashit( get_template_directory() ) . '/demo/demo.php';
  */
 require_once trailingslashit( get_template_directory() ) . '/includes/customizer-theme-info.php';
 
-
 if ( ! function_exists( 'sampression_admin_enqueue_styles' ) ):
 	function sampression_admin_enqueue_styles() {
 		// Add custom styles for customizer.
 		wp_enqueue_style( 'sampression-customizer-style', get_template_directory_uri() . '/lib/css/admin-style.css', array(), null);
 	}
 endif;
-add_action( 'admin_enqueue_scripts', 'sampression_admin_enqueue_styles' );
 
-
+add_action( 'customize_controls_enqueue_scripts', 'sampression_admin_enqueue_styles' );
