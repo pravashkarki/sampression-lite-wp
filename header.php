@@ -40,6 +40,8 @@ do_action( 'sampression_custom_header_style' );
 <body <?php body_class( 'top' ); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 
+<a class="skip-link screen-reader-text" href="#content-wrapper"><?php esc_html_e( 'Skip to content', 'sampression-lite' ); ?></a>
+
 <header id="header">
 	<div class="container">
 		<div class="columns five">

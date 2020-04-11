@@ -835,3 +835,17 @@ if ( ! function_exists( 'sampression_admin_enqueue_styles' ) ):
 endif;
 
 add_action( 'customize_controls_enqueue_scripts', 'sampression_admin_enqueue_styles' );
+
+/**
+ * Fix skip link focus in IE11.
+ *
+ * @link https://git.io/vWdr2
+ */
+function sampression_skip_link_focus_fix() {
+	?>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	<?php
+}
+add_action( 'wp_print_footer_scripts', 'sampression_skip_link_focus_fix' );
