@@ -218,6 +218,7 @@ if ( ! function_exists( 'sampression_js' ) ) {
 	function sampression_js() {
 		// JS at the bottom for fast page loading.
 		wp_enqueue_script( 'sampression-modernizer', get_template_directory_uri() . '/lib/js/modernizr.custom.min.js', '', '2.6.2', false );
+        wp_enqueue_script( 'superfish', get_template_directory_uri() . '/lib/js/superfish.js', array( 'jquery' ), '1.4.8', true );
 		wp_enqueue_script( 'sampression-script', get_template_directory_uri() . '/lib/js/scripts.js', array( 'jquery' ), '1.1', true );
 		wp_enqueue_script( 'isotope', get_template_directory_uri() . '/lib/js/isotope.pkgd.min.js', '', '', false );
 		wp_enqueue_script( 'isotope-init', get_template_directory_uri() . '/lib/js/isotope.js', '', '', false );

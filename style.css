@@ -617,12 +617,10 @@ input::-moz-focus-inner {
 a:link, a:visited {
     color: #8AB7AD;
     text-decoration: none;
-    outline: 0;
 }
 
 a:hover, a:focus, a:active {
     color: #333;
-    outline: 0;
 }
 
 .navigation, .comment-navigation {
@@ -685,7 +683,7 @@ body.admin-bar #primary-nav.fixed {
 
 #primary-nav .twelve {
     height: 28px;
-    margin: 20px 0 15px;
+    margin: 18px 0 15px;
     overflow: hidden;
 }
 
@@ -758,6 +756,7 @@ body.admin-bar #primary-nav.fixed {
     display: block;
     padding: 0;
     text-decoration: none;
+    margin-top: 4px;
 }
 
 #primary-nav ul.nav-listing li a span {
@@ -1231,7 +1230,6 @@ img.logo-img {
     height: 8px;
     display: block;
     background: url("images/arrow_top.png");
-    background: url("images/arrow_top.svg"), linear-gradient(transparent, transparent);
     background-repeat: no-repeat;
     position: absolute;
     right: 43%;
@@ -1316,7 +1314,6 @@ img.logo-img {
     height: 17px;
     display: block;
     background: url("images/arrow_right.png");
-    background: url("images/arrow_right.svg"), linear-gradient(transparent, transparent);
     background-repeat: no-repeat;
     position: absolute;
     right: -8px;
