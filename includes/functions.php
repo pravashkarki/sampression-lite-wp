@@ -802,7 +802,7 @@ function sampression_register_required_plugins() {
 		),
 
 		array(
-			'name' => esc_html__( 'One click demo import', 'sampression-lite' ),
+			'name' => esc_html__( 'One Click Demo Import', 'sampression-lite' ),
 			'slug' => 'one-click-demo-import',
 		),
 	);
