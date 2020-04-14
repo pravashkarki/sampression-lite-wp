@@ -52,15 +52,16 @@ function sampression_render_theme_page() {
 			<ul class="pro-feature-list">
 				<li>
 					<h3>
-						<?php esc_html_e( 'Theme Customizer', 'sampression-lite' ); ?>
+						<?php esc_html_e( 'Demo Content', 'sampression-lite' ); ?>
 					</h3>
-					<?php esc_html_e( 'The Sampression Lite Theme Customizer is packed full of design controls and features for setting up the styles of your website, including header styles, typography styles, footer widgets , default colors and so much more..', 'sampression-lite' ); ?>
+					<?php esc_html_e( 'To make your setup process more easy, we provide sample demo content files which you can import using One Click Demo Import plugin.', 'sampression-lite' ); ?>
+					<a href="https://sampression.com/products/sampression-lite/" target="_blank"><?php esc_html_e( 'Download Demo Content', 'sampression-lite' ); ?></a>
 				</li>
 				<li>
 					<h3>
-						<?php esc_html_e( 'Customizable Header', 'sampression-lite' ); ?>
+						<?php esc_html_e( 'Theme Customizer', 'sampression-lite' ); ?>
 					</h3>
-					<?php esc_html_e( 'Upload your custom logo & favicon with a few simple clicks. If you are just getting started, our theme also supports text-based logos.', 'sampression-lite' ); ?>
+					<?php esc_html_e( 'The Sampression Lite Theme Customizer is packed full of design controls and features for setting up the styles of your website, including header styles, typography styles, footer widgets , default colors and so much more..', 'sampression-lite' ); ?>
 				</li>
 				<li>
 					<h3>
