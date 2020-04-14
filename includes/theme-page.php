@@ -94,6 +94,12 @@ function sampression_render_theme_page() {
 					<?php esc_html_e( 'Live Theme Demo', 'sampression-lite' ); ?>
 				</a>
 			</p>
+            <p style="clear: both; padding-top: 20px;">
+            <h4>Here the sample content for your theme to get quickly started</h4>
+                <a target="_blank" class="button button-primary" href="https://sampression.com/wp-content/uploads/demo-files.zip">
+                    <?php esc_html_e( 'Download', 'sampression-lite' ); ?>
+                </a>
+            </p>
 		</div>
 	</div>
 	<style>
