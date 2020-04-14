@@ -55,7 +55,7 @@ function sampression_render_theme_page() {
 						<?php esc_html_e( 'Demo Content', 'sampression-lite' ); ?>
 					</h3>
 					<?php esc_html_e( 'To make your setup process more easy, we provide sample demo content files which you can import using One Click Demo Import plugin.', 'sampression-lite' ); ?>
-					<a href="https://sampression.com/products/sampression-lite/" target="_blank"><?php esc_html_e( 'Download Demo Content', 'sampression-lite' ); ?></a>
+					<a href="https://sampression.com/wp-content/uploads/demo-files.zip" target="_blank"><?php esc_html_e( 'Download Demo Content', 'sampression-lite' ); ?></a>
 				</li>
 				<li>
 					<h3>
@@ -95,12 +95,6 @@ function sampression_render_theme_page() {
 					<?php esc_html_e( 'Live Theme Demo', 'sampression-lite' ); ?>
 				</a>
 			</p>
-            <p style="clear: both; padding-top: 20px;">
-            <h4>Here the sample content for your theme to get quickly started</h4>
-                <a target="_blank" class="button button-primary" href="https://sampression.com/wp-content/uploads/demo-files.zip">
-                    <?php esc_html_e( 'Download', 'sampression-lite' ); ?>
-                </a>
-            </p>
 		</div>
 	</div>
 	<style>
