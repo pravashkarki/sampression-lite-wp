@@ -510,13 +510,10 @@ select {
     font-size: 13px;
     font-size: 1.3rem;
     -webkit-appearance: none;
-    cursor: pointer;
 }
 
 select {
-    background: url("images/dropdown-arrow.png") no-repeat right center;
-    background: url("images/dropdown-arrow.svg") no-repeat right center,
-    linear-gradient(transparent, transparent);
+    background: url("images/dropdown-arrow.svg") no-repeat right center;
     background-color: #fff;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 6px 30px 6px 11px;
@@ -701,7 +698,6 @@ body.admin-bar #primary-nav.fixed {
     background: rgba(51, 51, 51, 0.1);
     width: 22px;
     height: 13px;
-    display: block;
     position: absolute;
     bottom: 0;
     left: 10px;
@@ -1249,7 +1245,7 @@ img.logo-img {
     width: 17px;
     height: 8px;
     display: block;
-    background: url("images/arrow_top.png");
+    background: url("images/arrow_top.svg");
     background-repeat: no-repeat;
     position: absolute;
     right: 43%;
@@ -1334,10 +1330,10 @@ img.logo-img {
     width: 9px;
     height: 17px;
     display: block;
-    background: url("images/arrow_right.png");
+    background: url("images/arrow_right.svg");
     background-repeat: no-repeat;
     position: absolute;
-    right: -8px;
+    right: -7px;
     top: 8px;
 }
 
@@ -1570,9 +1566,7 @@ article.columns.item {
 .sticky:before{
     content: "";
     display: block;
-    background: url("images/sticky-icon.png") no-repeat 0 0;
-    background: url("images/sticky-icon.svg") no-repeat 0 0,
-    linear-gradient(transparent, transparent);
+    background: url("images/sticky-icon.svg") no-repeat 0 0;
     position: absolute;
     right: 13px;
     top: 0;
@@ -2398,7 +2392,10 @@ body.single .entry.clearfix form.post-password-form input[type="submit"]{
         padding-right: 0;
         margin-right: 0;
     }
-
+    article.columns.item {
+        width: 100% !important;
+        position: static !important;
+    }
 }
 
 /**
