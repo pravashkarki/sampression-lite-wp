@@ -67,7 +67,7 @@ function sampression_render_theme_page() {
 					<h3>
 						<?php esc_html_e( 'Search Engine Optimised', 'sampression-lite' ); ?>
 					</h3>
-					<?php esc_html_e( 'Our designers and developers follow the best SEO practices while developing each theme – we make sure search engine spiders like what they see when they are crawling your site.', 'sampression-lite' ); ?>
+					<?php esc_html_e( 'Our designers and developers follow the best SEO practices while developing each theme. We make sure search engine spiders like what they see when they are crawling your site.', 'sampression-lite' ); ?>
 				</li>
 				<li class="clear left">
 					<h3>
