@@ -230,5 +230,8 @@ Version 2.2.3
 = Fixed: Minor bug fixes.
 = Removed: Removed demo files.
 
+Version 2.2.4
+= Removed: Non-printable characters
+
 == Child Theme Support ===
 Sampresson Lite supports child themes. Please use child themes for customization of "Sampression Lite". For further reading: https://codex.wordpress.org/Child_Themes.
