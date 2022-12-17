@@ -1,0 +1,144 @@
+/*
+Theme Name: Sampression Lite
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+See https://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+
+body{
+	direction: rtl;
+	unicode-bidi: embed;
+}
+caption,
+th,
+td {
+	text-align: right;
+}
+blockquote { 
+	margin: 15px 15px 15px 30px; 
+	padding-left: 0;
+	padding-right: 20px;
+	border-left:0;
+	border-right: 5px solid #ddd;
+}
+li {
+	margin-right: 15px;
+}
+pre{
+	
+}
+
+.container .column, .container .columns {
+    float: right;
+}
+img.logo-img {
+    display: inline;
+    float: right;
+	margin-right:0;
+	margin-left:10px;
+}
+.col {
+    float: right;
+}
+.search-form .search-submit {
+    right: auto;
+    left: 0;
+}
+#btn-nav-opt {
+	right:10px;
+}
+#top-nav{
+	float:left;
+}
+#top-nav ul li:last-child {
+	margin-left:0;
+}
+#interaction-sec{
+	float:left;
+}
+.search-form input, .sm-top a, #get-cats, select {
+ 	display:block;
+	float:right;
+	}
+select{
+	background-position: 8px center;
+}
+#top-nav ul ul:before , #top-nav ul ul ul:before {
+	text-indent: 9999px;
+}
+#primary-nav .nav-label {
+	right:10px;
+	left:0;
+	margin-right:0;
+	width:75px;
+}
+#primary-nav ul.nav-listing {
+	margin:0 90px 0 0;
+}
+#primary-nav ul.nav-listing li {
+    float: right;
+}
+#primary-nav ul.nav-listing li a span {
+	float:right;
+	margin-right:0;
+	margin-left:5px;
+	}
+
+.single .meta time, 
+.single .meta .cats, 
+.single .meta .edit, 
+.single .meta .post-author, 
+.single .meta .tags,
+body.single article.post .meta .col{ 
+	padding-left:10px; 
+	margin-right:0; 
+	float:right; 
+}
+#post-listing .meta time {
+    margin-right: 0;
+    margin-left: 10px;
+}
+.cats:before, .tags:before {
+    float: right;
+    margin-left: 1px;
+}
+.meta-nav{ display: block;}
+.nav-previous .meta-nav {
+    float: left;
+	margin-right: 10px;
+}
+.nav-next .meta-nav {
+    float: right;
+	margin-left: 10px;
+}
+.widget img{
+	float:right;
+}
+.widget .avatar {
+    float: right;
+	margin: 0 0 5px 5px;
+}
+.widget .search-form {
+    float: right;
+	display:inline;
+	margin-right: 0;
+}
+.avatar-wrapper{
+	float: right;
+	padding-left: 20px;
+	padding-right: 0;
+}
+.commentlist span.pointer{
+	right: auto;
+    top: 10px;
+    left: 0;
+    border-right: none;
+    border-left: 5px solid #fff;
+}
+html[dir="rtl"] .columns.sidebar {
+    margin-right: 2%;
+    margin-left: 0;
+}
+html[dir="rtl"] .sm-top li{
+	margin-right: 0;
+}
