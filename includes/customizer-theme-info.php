@@ -36,11 +36,19 @@ if ( ! function_exists( 'sampression_add_info_customizer' ) ) {
 						'text' => esc_html__( 'Documentation', 'sampression-lite' ),
 					),
 					'demo'          => array(
+<<<<<<< HEAD
 						'link' => esc_url( 'https://www.demo.sampression.com/?demosite=SAMPRESSION-LITE' ),
 						'text' => esc_html__( 'Live Theme Demo', 'sampression-lite' ),
 					),
 					'forum'          => array(
 						'link' => esc_url( 'https://www.sampression.com/community/' ),
+=======
+						'link' => esc_url( 'https://www.demo.sampression.com/sampression-lite/' ),
+						'text' => esc_html__( 'Live Theme Demo', 'sampression-lite' ),
+					),
+					'forum'          => array(
+						'link' => esc_url( 'https://www.sampression.com/forums/' ),
+>>>>>>> 9d5791e6521e6c57602ccba0ab38f9f6fb037a5d
 						'text' => esc_html__( 'Community Forum', 'sampression-lite' ),
 					),
 				);

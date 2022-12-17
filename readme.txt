@@ -3,12 +3,19 @@
 Contributors: sampression
 Requires at least: 5.2
 Requires PHP: 5.6.20
+<<<<<<< HEAD
 Tested up to: 5.8
 Stable tag: 2.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, four-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog
 
+=======
+Tested up to: 5.4
+Stable tag: 2.2.3
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+>>>>>>> 9d5791e6521e6c57602ccba0ab38f9f6fb037a5d
 
 == Description ==
 Sampression Lite is a free, Pinterest inspired responsive WordPress theme with an attractive masonry blog layout. The theme has a clean and lightweight design. It boasts of user-friendly customizing options making it very easy to customize your blog’s header, menus, widgets, background color, and images. The theme is also SEO friendly and translation ready, allowing you the freedom of expressing in your native language. Get free support at https://sampression.com/support and View live demo site at https://www.demo.sampression.com/sampression-lite
@@ -235,6 +242,7 @@ Version 2.2.3
 Version 2.2.4
 = Removed: Non-printable characters
 
+<<<<<<< HEAD
 Version 2.3
 = Tested: Compatible with WordPress 5.8 
 = Fixed: Minor bug fixes. 
@@ -244,5 +252,7 @@ Version 2.3
 = Added: Keyboard Navigation
 
 
+=======
+>>>>>>> 9d5791e6521e6c57602ccba0ab38f9f6fb037a5d
 == Child Theme Support ===
 Sampresson Lite supports child themes. Please use child themes for customization of "Sampression Lite". For further reading: https://codex.wordpress.org/Child_Themes.

@@ -44,7 +44,11 @@ function sampression_render_theme_page() {
 			</p>
 			<p>
 				<?php esc_html_e( 'For further help, please visit our support page at:', 'sampression-lite' ); ?>
+<<<<<<< HEAD
 				<a href="<?php echo esc_url( 'https://www.sampression.com/support/' ); ?>" target="_blank"><?php echo esc_url( 'https://www.sampression.com/support/' ); ?></a>
+=======
+				<a href="https://www.sampression.com/support/" target="_blank">https://www.sampression.com/support/</a>
+>>>>>>> 9d5791e6521e6c57602ccba0ab38f9f6fb037a5d
 			</p>
 		</div>
 		<div>
