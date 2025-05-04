@@ -2,9 +2,9 @@
 
 Contributors: sampression
 Requires at least: 5.2
-Requires PHP: 5.6.20
-Tested up to: 5.8
-Stable tag: 2.3
+Requires PHP: 7.4
+Tested up to: 6.8
+Stable tag: 2.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, four-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog
@@ -242,6 +242,13 @@ Version 2.3
 = Changed: Theme Demo Url
 = Added: Skip link
 = Added: Keyboard Navigation
+
+Version 2.4
+= Tested: Compatible with WordPress 6.8
+= Updated: PHP requirement to 7.4
+= Fixed: Minor bug fixes and improvements
+= Updated: Theme to meet latest WordPress requirements
+
 
 
 == Child Theme Support ===
