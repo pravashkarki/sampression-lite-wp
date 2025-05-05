@@ -1,0 +1,81 @@
+/*
+* Theme Name: Sampression Lite
+* Description: Adds support for languages written in a Right To Left (RTL) direction.
+*/
+
+// Import variables and mixins
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// RTL specific styles
+body {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+// Convert all floats
+.alignleft {
+  float: right;
+}
+
+.alignright {
+  float: left;
+}
+
+// Navigation
+#top-nav {
+  float: left;
+  
+  ul li {
+    float: right;
+    margin-right: 20px;
+    margin-left: 0;
+    
+    ul.sub-menu {
+      left: auto;
+      right: 0;
+      
+      li ul.sub-menu {
+        left: auto;
+        right: 100%;
+      }
+    }
+  }
+}
+
+// Content
+.post-navigation {
+  .nav-links {
+    .nav-previous {
+      float: right;
+      text-align: right;
+    }
+    
+    .nav-next {
+      float: left;
+      text-align: left;
+    }
+  }
+}
+
+// Footer
+#footer-wrapper {
+  .powered-wp {
+    float: right;
+  }
+  
+  .site-info {
+    float: left;
+    text-align: left;
+  }
+}
+
+// Sidebar
+.sidebar {
+  padding-left: 0;
+  padding-right: 20px;
+  
+  @include respond-to(sm) {
+    padding-right: 0;
+  }
+}

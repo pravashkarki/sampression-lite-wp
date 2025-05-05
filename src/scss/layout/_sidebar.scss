@@ -1,0 +1,49 @@
+/**
+* 12.4 - Sidebar
+*/
+
+.sidebar {
+  padding-left: 20px;
+  
+  @include respond-to(sm) {
+    padding-left: 0;
+    margin-top: 2em;
+  }
+  
+  .widget {
+    margin-bottom: 2em;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    .widget-title {
+      margin-top: 0;
+      margin-bottom: 1em;
+      font-size: 1.2em;
+    }
+    
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      
+      li {
+        padding: 5px 0;
+        border-bottom: 1px solid #eee;
+        
+        &:last-child {
+          border-bottom: none;
+        }
+        
+        a {
+          display: block;
+          
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+/**
+* 9.0 - Widgets
+*/
+
+.widget {
+  margin-bottom: 2em;
+  
+  .widget-title {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+  }
+  
+  ul {
+    margin-bottom: 1em;
+    
+    li {
+      margin-bottom: 0.5em;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.widget_search {
+  .search-form {
+    position: relative;
+    
+    .search-field {
+      width: 100%;
+      padding-right: 40px;
+    }
+    
+    .search-submit {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 38px;
+      width: 38px;
+      padding: 0;
+    }
+  }
+}

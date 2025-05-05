@@ -1,0 +1,156 @@
+/**
+* 6.0 - Navigation
+*/
+
+/* 6.1 - Links */
+a {
+  color: $link-color;
+  text-decoration: none;
+  @include transition(color);
+  
+  &:hover,
+  &:focus {
+    color: darken($link-color, 15%);
+  }
+}
+
+/* 6.2 - Menus */
+#top-nav {
+  float: right;
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    li {
+      position: relative;
+      float: left;
+      margin-left: 20px;
+      
+      a {
+        display: block;
+        padding: 10px 0;
+        color: $text-color;
+        
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      
+      &.current-menu-item > a,
+      &.current-menu-parent > a {
+        color: $primary-color;
+      }
+      
+      /* Submenu */
+      ul.sub-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 99999;
+        min-width: 200px;
+        background-color: #fff;
+        border: 1px solid #eee;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        
+        li {
+          float: none;
+          margin-left: 0;
+          
+          a {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+            
+            &:hover {
+              background-color: #f9f9f9;
+            }
+          }
+          
+          &:last-child > a {
+            border-bottom: none;
+          }
+          
+          /* Third level menu */
+          ul.sub-menu {
+            top: 0;
+            left: 100%;
+          }
+        }
+      }
+      
+      &:hover > ul.sub-menu {
+        display: block;
+      }
+    }
+  }
+  
+  @include respond-to(sm) {
+    float: none;
+    text-align: center;
+    
+    ul li {
+      float: none;
+      display: inline-block;
+    }
+  }
+  
+  @include respond-to(xs) {
+    ul li {
+      margin-left: 10px;
+    }
+  }
+}
+
+/* Mobile menu */
+.menu-toggle {
+  display: none;
+  padding: 10px 15px;
+  background-color: $primary-color;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  
+  @include respond-to(xs) {
+    display: block;
+  }
+}
+
+@include respond-to(xs) {
+  #top-nav {
+    ul {
+      display: none;
+      
+      &.toggled {
+        display: block;
+        
+        li {
+          float: none;
+          display: block;
+          margin-left: 0;
+          
+          a {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+          }
+          
+          ul.sub-menu {
+            position: static;
+            display: block;
+            width: 100%;
+            box-shadow: none;
+            
+            li a {
+              padding-left: 30px;
+            }
+            
+            ul.sub-menu li a {
+              padding-left: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
