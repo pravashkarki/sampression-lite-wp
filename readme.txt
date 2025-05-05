@@ -2,16 +2,16 @@
 
 Contributors: sampression
 Requires at least: 5.2
-Requires PHP: 5.6.20
-Tested up to: 5.8
-Stable tag: 2.3
+Requires PHP: 7.4
+Tested up to: 6.8
+Stable tag: 2.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, four-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog
 
 
 == Description ==
-Sampression Lite is a free, Pinterest inspired responsive WordPress theme with an attractive masonry blog layout. The theme has a clean and lightweight design. It boasts of user-friendly customizing options making it very easy to customize your blog’s header, menus, widgets, background color, and images. The theme is also SEO friendly and translation ready, allowing you the freedom of expressing in your native language. Get free support at https://sampression.com/support and View live demo site at https://www.demo.sampression.com/sampression-lite
+Sampression Lite is a free, Pinterest inspired responsive WordPress theme with an attractive masonry blog layout. The theme has a clean and lightweight design. It boasts of user-friendly customizing options making it very easy to customize your blog's header, menus, widgets, background color, and images. The theme is also SEO friendly and translation ready, allowing you the freedom of expressing in your native language. Get free support at https://sampression.com/support and View live demo site at https://www.demo.sampression.com/sampression-lite
 
 == Features ==
 Responsive Design, Cross Browser Compatibility, Custom Code, Custom Logo, Customizer Options, Options to fine tune the theme to your exacting requirement, Easy Customization, Easy Installation, Retina Ready, Search Engine Optimized, Translation Ready, RTL Language Support, Social Media, Typography Options
@@ -43,7 +43,7 @@ Responsive Design, Cross Browser Compatibility, Custom Code, Custom Logo, Custom
 
 7. Change display Font-face
  = Login to your wp-admin are and go to Appearance -> Customize -> General Settings -> Typography
- = You can set your font’s color and Font-face for both header and body text here.
+ = You can set your font's color and Font-face for both header and body text here.
  = Sampression Lite now has inbuilt support for 30 popular Google Fonts.
 
 8. Social Media:
@@ -99,7 +99,7 @@ Version 1.3.2
 
 = Fixed "Notice" issue: Notice doesn't appear when there are no sticky posts
 = Fixed "Tags Alignment" issue: Before the fix, tags didn't align when there were many tags and categories
-= Fixed “Image Alignment” issue: Image inserted from editor are automatically aligned
+= Fixed "Image Alignment" issue: Image inserted from editor are automatically aligned
 = Fixed "Default About Me Widget" issue: Default "About Me Widget" on the bottom of the page can now be removed
 = Fixed "Responsive Design" related issues
 
@@ -242,6 +242,16 @@ Version 2.3
 = Changed: Theme Demo Url
 = Added: Skip link
 = Added: Keyboard Navigation
+
+Version 2.4
+= Tested: Compatible with WordPress 6.8
+= Updated: PHP requirement to 7.4
+= Fixed: Minor bug fixes and improvements
+= Updated: Theme to meet latest WordPress requirements
+= Added: SCSS support with modular structure
+= Added: Vite build system for modern development workflow
+= Added: Development and production build modes
+= Improved: Code organization and maintainability
 
 
 == Child Theme Support ===

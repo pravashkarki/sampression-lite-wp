@@ -662,14 +662,30 @@ if ( ! function_exists( 'sampression_enqueue_styles' ) ):
 		// Add custom fonts, used in the main stylesheet.
 		wp_enqueue_style( 'sampression-fonts', sampression_fonts_url(), array(), null );
 		wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', false, false, 'screen' );
-		wp_enqueue_style( 'sampression-style', get_stylesheet_uri(), false, '1.4' );
+		
+		$theme_version = wp_get_theme()->get('Version');
+		
+		$dev_mode = defined('WP_DEBUG') && WP_DEBUG;
+		
+		if ($dev_mode && file_exists(get_template_directory() . '/dist/style.css')) {
+			wp_enqueue_style( 'sampression-style', get_template_directory_uri() . '/dist/style.css', false, $theme_version );
+			
+			if (is_rtl()) {
+				wp_enqueue_style( 'sampression-rtl', get_template_directory_uri() . '/dist/rtl.css', array('sampression-style'), $theme_version );
+			}
+		} else {
+			wp_enqueue_style( 'sampression-style', get_stylesheet_uri(), false, $theme_version );
+			
+			if (is_rtl()) {
+				wp_enqueue_style( 'sampression-rtl', get_template_directory_uri() . '/rtl.css', array('sampression-style'), $theme_version );
+			}
+		}
 
-		// Load selectivizr.js
 		wp_enqueue_script( 'sampression-selectivizr', get_template_directory_uri() . '/lib/js/selectivizr.js', array(), '1.0.2', true );
 		wp_script_add_data( 'sampression-selectivizr', 'conditional', 'lt IE 9' );
-
 	}
 endif;
+
 add_action( 'wp_enqueue_scripts', 'sampression_enqueue_styles' );
 
 function sampression_custom_header_style() {

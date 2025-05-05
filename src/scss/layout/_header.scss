@@ -1,0 +1,52 @@
+/**
+* 12.1 - Header
+*/
+
+#header-wrapper {
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  
+  .site-branding {
+    float: left;
+    
+    #site-title {
+      margin: 0;
+      font-size: 2em;
+      
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        
+        &:hover {
+          color: darken($primary-color, 10%);
+        }
+      }
+    }
+    
+    #site-description {
+      margin: 5px 0 0;
+      font-size: 1em;
+      color: #777;
+    }
+  }
+  
+  .custom-logo-link {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    
+    img {
+      max-height: 80px;
+      width: auto;
+    }
+  }
+  
+  @include respond-to(sm) {
+    .site-branding {
+      float: none;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}

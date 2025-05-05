@@ -1,0 +1,147 @@
+/**
+* 13.0 - Media Queries
+*/
+
+/* 13.1 - <= 1025px */
+@include respond-to(lg) {
+  .container {
+    width: 95%;
+  }
+}
+
+/* 13.2 - <= 959px */
+@include respond-to(md) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* 13.3 - <= 767px */
+@include respond-to(sm) {
+  .container {
+    width: 85%;
+  }
+  
+  .column,
+  .columns {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  #header-wrapper {
+    .site-branding {
+      float: none;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  
+  #top-nav {
+    float: none;
+    text-align: center;
+  }
+  
+  .sidebar {
+    padding-left: 0;
+    margin-top: 2em;
+  }
+  
+  #footer-wrapper {
+    .powered-wp,
+    .site-info {
+      float: none;
+      text-align: center;
+    }
+    
+    .site-info {
+      margin-top: 10px;
+    }
+  }
+}
+
+/* 13.4 - <= 479px */
+@include respond-to(xs) {
+  .container {
+    width: 90%;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  #top-nav {
+    ul {
+      display: none;
+      
+      &.toggled {
+        display: block;
+        
+        li {
+          float: none;
+          display: block;
+          margin-left: 0;
+          
+          a {
+            padding: 10px 15px;
+            border-bottom: 1px solid #eee;
+          }
+          
+          ul.sub-menu {
+            position: static;
+            display: block;
+            width: 100%;
+            box-shadow: none;
+            
+            li a {
+              padding-left: 30px;
+            }
+            
+            ul.sub-menu li a {
+              padding-left: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 13.5 - <= 319px */
+@include respond-to(xxs) {
+  .container {
+    width: 95%;
+  }
+}
+
+/**
+* 14.0 - Print
+*/
+@media print {
+  body {
+    background: none !important;
+    color: #000;
+    font-size: 10pt;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  .entry-content a:after {
+    content: " (" attr(href) ")";
+  }
+  
+  .site-header,
+  .comment-respond,
+  .comments-area .comment-edit-link,
+  .comments-area .reply,
+  .comment-metadata .edit-link,
+  .widget-area,
+  .site-footer {
+    display: none;
+  }
+  
+  .site-content {
+    padding: 0;
+  }
+}

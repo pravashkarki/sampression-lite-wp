@@ -1,0 +1,67 @@
+/*!
+Theme Name: Sampression Lite
+Theme URI: http://sampression.com/themes/sampression-lite/
+Author: Sampression
+Author URI: http://www.sampression.com
+Description: Sampression Lite is a free, Pinterest inspired responsive WordPress theme with an attractive masonry blog layout. The theme has a clean and lightweight design. It boasts of user-friendly customizing options making it very easy to customize your blog's header, menus, widgets, background color, and images. The theme is also SEO friendly and translation ready, allowing you the freedom of expressing in your native language. Get free support at http://sampression.com/support and View live demo site at http://www.demo.sampression.com/sampression-lite
+Version: 2.3
+Requires PHP: 5.6.20
+Tested up to: 5.8
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, four-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog
+Text Domain: sampression-lite
+
+This theme is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/**
+* Table of Contents
+*
+* 1.0 - Reset
+* 2.0 - Genericons
+* 3.0 - Typography
+* 4.0 - Elements
+* 5.0 - Forms
+* 6.0 - Navigation
+*   6.1 - Links
+*   6.2 - Menus
+* 7.0 - Alignments
+* 8.0 - Clearings
+* 9.0 - Widgets
+* 10.0 - Media
+*    10.1 - Captions
+*    10.2 - Galleries
+* 11.0 - Helper Classes
+* 12.0 - Content
+*    12.1 - Header
+*    12.2 - Posts and pages
+*    12.4 - Sidebar
+*    12.5 - Comments
+*    12.6 - Footer
+* 13.0 - Media Queries
+*    13.1 - <= 1025px
+*    13.2 - <= 959px
+*    13.3 - <= 767px
+*    13.4 - <= 479px
+*    13.5 - <= 319px
+* 14.0 - Print
+*/
+
+// Import all partial SCSS files
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'vendor/skeleton';
+@import 'base/reset';
+@import 'base/typography';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/widgets';
+@import 'components/media';
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/content';
+@import 'layout/sidebar';
+@import 'layout/footer';
+@import 'layout/responsive';

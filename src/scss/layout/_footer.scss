@@ -1,0 +1,43 @@
+/**
+* 12.6 - Footer
+*/
+
+#footer-wrapper {
+  padding: 20px 0;
+  background-color: #f9f9f9;
+  border-top: 1px solid #eee;
+  
+  .copyright {
+    font-size: 0.9em;
+    color: #777;
+    
+    a {
+      color: $primary-color;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .powered-wp {
+    float: left;
+  }
+  
+  .site-info {
+    float: right;
+    text-align: right;
+  }
+  
+  @include respond-to(sm) {
+    .powered-wp,
+    .site-info {
+      float: none;
+      text-align: center;
+    }
+    
+    .site-info {
+      margin-top: 10px;
+    }
+  }
+}
