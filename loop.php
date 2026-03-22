@@ -25,7 +25,7 @@ foreach ( ( get_the_category() ) as $category ) {
 	} else {
 		$item = '';
 	}
-	echo "\"" . $category->slug . "\"" . $item;
+	echo "\"" . esc_attr( $category->slug ) . "\"" . $item;
 	$i ++;
 } ?>]'>
 

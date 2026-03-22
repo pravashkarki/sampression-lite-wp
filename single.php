@@ -18,7 +18,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 ?>
 
 	<nav id="nav-above" class="post-navigation clearfix columns nine">
-		<h3 class="assistive-text hidden"><?php echo esc_html__( 'Post navigation', 'sampression-lite' ); ?></h3>
+		<h3 class="screen-reader-text"><?php echo esc_html__( 'Post navigation', 'sampression-lite' ); ?></h3>
 		<div class="nav-previous alignleft"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'sampression-lite' ) ); ?></div>
 		<div class="nav-next alignright"><?php next_post_link( '%link', __( 'Next <span class="meta-nav">&rarr;</span>', 'sampression-lite' ) ); ?></div>
 	</nav><!-- #nav-above -->

@@ -33,8 +33,8 @@ function sampression_customize_register( $wp_customize ) {
 		'priority'       => 10,
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
-		'title'          => esc_html( 'General Settings', 'sampression-lite' ),
-		'description'    => esc_html( "You can customize general settings of your site like the site's name, tagline, logo, site icon, copyright text, background image, colour, choice of font face and color here.", 'sampression-lite' ),
+		'title'          => esc_html__( 'General Settings', 'sampression-lite' ),
+		'description'    => esc_html__( "You can customize general settings of your site like the site's name, tagline, logo, site icon, copyright text, background image, colour, choice of font face and color here.", 'sampression-lite' ),
 	) );
 
 	/**

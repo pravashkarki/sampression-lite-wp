@@ -11,7 +11,7 @@ get_header(); ?>
 <?php if ( have_posts() ) : ?>
 
 	<nav id="nav-above" class="post-navigation clearfix columns twelve">
-		<h3 class="assistive-text hidden">
+		<h3 class="screen-reader-text">
 			<?php esc_html_e( 'Post navigation', 'sampression-lite' ); ?>
 		</h3>
 		<div class="nav-previous alignleft">

@@ -1,10 +1,10 @@
 === Sampression Lite ===
 
 Contributors: sampression
-Requires at least: 5.2
-Requires PHP: 5.6.20
-Tested up to: 5.8
-Stable tag: 2.3
+Requires at least: 5.6
+Requires PHP: 7.4
+Tested up to: 6.7
+Stable tag: 2.3.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, four-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog
@@ -63,17 +63,34 @@ Responsive Design, Cross Browser Compatibility, Custom Code, Custom Logo, Custom
 == Credits ==
 
 = Fonts & Icons =
- = Genericons: https://github.com/Automattic/Genericons/blob/master/LICENSE.txt
+ = Genericons: https://github.com/Automattic/Genericons/blob/master/LICENSE.txt - GPL v2
 
 = CSS =
- = Skeleton: https://github.com/dhg/Skeleton/blob/master/LICENSE.md
+ = Skeleton v2.0.4 by Dave Gamache: https://github.com/dhg/Skeleton/blob/master/LICENSE.md - MIT license (https://opensource.org/licenses/MIT)
 
 = JS =
- = Shuffle.js by @Vestride (https://vestride.github.io/Shuffle/) - @license MIT license (https://opensource.org/licenses/MIT)
- = Modernizr: https://github.com/Modernizr/Modernizr - @license MIT license (https://opensource.org/licenses/MIT)
- = Selectivizr: https://github.com/keithclark/selectivizr - @license MIT license (https://opensource.org/licenses/MIT)
+ = Isotope v3.0.6 by Metafizzy: https://github.com/metafizzy/isotope - GPLv3 license (https://www.gnu.org/licenses/gpl-3.0.html)
+ = Superfish v1.7.10 by Joel Birch: https://github.com/joeldbirch/superfish - MIT/GPL dual license (https://opensource.org/licenses/MIT)
+ = Modernizr v2.6.2: https://github.com/Modernizr/Modernizr - MIT license (https://opensource.org/licenses/MIT)
+ = Selectivizr v1.0.2: https://github.com/keithclark/selectivizr - MIT license (https://opensource.org/licenses/MIT)
 
 == Changelog ==
+Version 2.3.1
+= Security: Removed unused AJAX handler (filter-cat-data) that lacked nonce verification
+= Fixed: Viewport meta now allows user zoom (accessibility requirement)
+= Fixed: Missing semicolon in logo display function
+= Fixed: Unescaped category slug output in post loop
+= Fixed: Non-translatable strings in Customizer panel (esc_html to esc_html__)
+= Fixed: Comment navigation heading used esc_html instead of esc_html_e
+= Fixed: Replaced assistive-text class with screen-reader-text (WordPress standard)
+= Fixed: Google Fonts URL now uses https instead of protocol-relative URL
+= Fixed: Credits section updated with correct library attributions and licenses
+= Added: Unminified Isotope source file (WordPress.org requirement)
+= Removed: Mobile Safari address bar auto-hide script (outdated hack)
+= Updated: Tested up to WordPress 6.7
+= Updated: Requires PHP 7.4
+= Updated: Requires at least WordPress 5.6
+
 Version 1.1.2.1.2
  = Fixed Error 1: Latest posts appeared twice in the home page.
  = Fixed Error 2: Widgetizing problem with the right sidebar.

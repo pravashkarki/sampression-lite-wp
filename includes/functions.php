@@ -521,7 +521,7 @@ function sampression_show_logo() {
 	if ( function_exists( 'the_custom_logo' ) && get_custom_logo() ) {
 		the_custom_logo();
 	} elseif ( get_theme_mod( 'sampression_logo', get_option( 'opt_sam_logo' ) ) ) {
-		$logo = get_theme_mod( 'sampression_logo', get_option( 'opt_sam_logo' ) )
+		$logo = get_theme_mod( 'sampression_logo', get_option( 'opt_sam_logo' ) );
 		?>
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"
            title="<?php echo esc_attr( ucwords( get_bloginfo( 'name', 'display' ) ) ); ?>" rel="home" id="logo-area">
@@ -536,77 +536,6 @@ function sampression_show_logo() {
 }
 
 
-/*=======================================================================
-* declare the URL to the file that handles the AJAX request (wp-admin/admin-ajax.php)
-*=======================================================================*/
-
-add_action( 'wp_ajax_nopriv_filter-cat-data', 'sampression_filter_cat_callback' );
-add_action( 'wp_ajax_filter-cat-data', 'sampression_filter_cat_callback' );
-
-function sampression_filter_cat_callback() {
-	$slug    = $_POST['category'];
-	$exc     = $_POST['exclude'];
-	$exclude = explode( '~', $exc );
-
-	$qargs = array(
-		'category_name' => $slug,
-		'post__not_in'  => $exclude,
-		'post_status'   => 'publish',
-	);
-
-	$custom_query = new WP_Query( $qargs );
-
-	while ( $custom_query->have_posts() ) : $custom_query->the_post();
-		?>
-        <article id="post-<?php the_ID(); ?>" class="post item columns four <?php echo sampression_cat_slug(); ?> ">
-            <h3 class="post-title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-
-			<?php if ( has_post_thumbnail() ) { ?>
-                <div class="featured-img">
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large' ); ?></a>
-                </div>
-                <!-- .featured-img -->
-			<?php } ?>
-
-            <div class="entry">
-				<?php the_excerpt(); ?>
-            </div>
-            <!-- .entry -->
-
-            <div class="meta clearfix">
-				<?php
-				printf( __( '%3$s <time class="col" datetime="2011-09-28"><span class="ico">Published on</span>%2$s</time> ', 'sampression-lite' ), 'meta-prep meta-prep-author',
-					sprintf( '<a href="%1$s" title="%2$s" rel="bookmark">%3$s</a>',
-						esc_url( get_permalink() ),
-						esc_attr( get_the_time() ),
-						get_the_date( get_option( 'date_format' ) )
-					),
-					sprintf( '<div class="post-author col"><span class="ico hello">Author</span><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></div>',
-						esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-						sprintf( esc_attr__( 'View all posts by %s', 'sampression-lite' ), get_the_author() ),
-						get_the_author()
-					)
-				);
-				?>
-
-				<?php if ( comments_open() ) : ?>
-                    <span class="col count-comment">
-            <span class="pointer"></span>
-						<?php comments_popup_link( __( '0', 'sampression-lite' ), __( '1', 'sampression-lite' ), __( '%', 'sampression-lite' ) ); ?>
-            </span>
-				<?php endif; ?>
-            </div>
-
-            <div class="meta">
-                <div class="cats"><?php printf( __( '<span class="ico">Categories</span><div class="overflow-hidden cat-listing">%s</div>', 'sampression-lite' ), get_the_category_list( ', ' ) ); ?></div>
-            </div>
-        </article>
-	<?php
-	endwhile;
-	wp_reset_postdata();
-	die();
-}
-
 /**
  * Add meta tags.
  */
@@ -617,7 +546,7 @@ function sampression_add_meta() {
     <!-- Charset -->
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <!-- Mobile Specific Metas  -->
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<?php
 }
 
@@ -651,7 +580,7 @@ function sampression_fonts_url() {
 	if ( $fonts ) {
 		$fonts_url = add_query_arg( array(
 			'family' => implode( '|', $fonts )
-		), '//fonts.googleapis.com/css' );
+		), 'https://fonts.googleapis.com/css' );
 	}
 
 	return $fonts_url;

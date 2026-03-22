@@ -60,7 +60,7 @@ endif;
 		// Are there comments to navigate through.
 		?>
 		<nav id="comment-nav-above">
-			<h1 class="assistive-text"><?php echo esc_html( 'Comment navigation', 'sampression-lite' ); ?></h1>
+			<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'sampression-lite' ); ?></h1>
 			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'sampression-lite' ) ); ?></div>
 			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'sampression-lite' ) ); ?></div>
 		</nav>
@@ -88,7 +88,7 @@ endif;
 		// are there comments to navigate through.
 		?>
 		<nav id="comment-nav-below">
-			<h1 class="assistive-text">
+			<h1 class="screen-reader-text">
 				<?php esc_html_e( 'Comment navigation', 'sampression-lite' ); ?>
 			</h1>
 			<div class="nav-previous">
