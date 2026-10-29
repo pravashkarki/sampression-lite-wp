@@ -44,7 +44,7 @@ function sampression_render_theme_page() {
 			</p>
 			<p>
 				<?php esc_html_e( 'For further help, please visit our support page at:', 'sampression-lite' ); ?>
-				<a href="<?php echo esc_url( 'https://www.sampression.com/support/' ); ?>" target="_blank"><?php echo esc_url( 'https://www.sampression.com/support/' ); ?></a>
+				<a href="<?php echo esc_url( 'https://wordpress.org/support/theme/sampression-lite/' ); ?>" target="_blank"><?php echo esc_url( 'https://wordpress.org/support/theme/sampression-lite/' ); ?></a>
 			</p>
 		</div>
 		<div>
@@ -89,12 +89,6 @@ function sampression_render_theme_page() {
 				</li>
 
 			</ul>
-			<p style="clear: both; padding-top: 20px;">
-
-				<a target="_blank" class="button button-primary" href="https://www.demo.sampression.com/sampression-lite/">
-					<?php esc_html_e( 'Live Theme Demo', 'sampression-lite' ); ?>
-				</a>
-			</p>
 		</div>
 	</div>
 	<style>

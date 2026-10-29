@@ -28,20 +28,8 @@ if ( ! function_exists( 'sampression_add_info_customizer' ) ) {
 						'text' => esc_html__( 'Theme Info', 'sampression-lite' ),
 					),
 					'support'       => array(
-						'link' => esc_url( 'https://www.sampression.com/support/' ),
+						'link' => esc_url( 'https://wordpress.org/support/theme/sampression-lite/' ),
 						'text' => esc_html__( 'Support', 'sampression-lite' ),
-					),
-					'documentation' => array(
-						'link' => esc_url( 'https://www.sampression.com/documentation-sampression-lite/' ),
-						'text' => esc_html__( 'Documentation', 'sampression-lite' ),
-					),
-					'demo'          => array(
-						'link' => esc_url( 'https://www.demo.sampression.com/?demosite=SAMPRESSION-LITE' ),
-						'text' => esc_html__( 'Live Theme Demo', 'sampression-lite' ),
-					),
-					'forum'          => array(
-						'link' => esc_url( 'https://www.sampression.com/community/' ),
-						'text' => esc_html__( 'Community Forum', 'sampression-lite' ),
 					),
 				);
 				$count = 0;

@@ -11,7 +11,7 @@ Tags: two-columns, four-columns, left-sidebar, right-sidebar, flexible-header, c
 
 
 == Description ==
-Sampression Lite is a free, Pinterest inspired responsive WordPress theme with an attractive masonry blog layout. The theme has a clean and lightweight design. It boasts of user-friendly customizing options making it very easy to customize your blog’s header, menus, widgets, background color, and images. The theme is also SEO friendly and translation ready, allowing you the freedom of expressing in your native language. Get free support at https://sampression.com/support and View live demo site at https://www.demo.sampression.com/sampression-lite
+Sampression Lite is a free, Pinterest inspired responsive WordPress theme with an attractive masonry blog layout. The theme has a clean and lightweight design. It boasts of user-friendly customizing options making it very easy to customize your blog’s header, menus, widgets, background color, and images. The theme is also SEO friendly and translation ready, allowing you the freedom of expressing in your native language.
 
 == Features ==
 Responsive Design, Cross Browser Compatibility, Custom Code, Custom Logo, Customizer Options, Options to fine tune the theme to your exacting requirement, Easy Customization, Easy Installation, Retina Ready, Search Engine Optimized, Translation Ready, RTL Language Support, Social Media, Typography Options
@@ -247,6 +247,7 @@ Version 2.4
 = Tested: Compatible with WordPress 7.1
 = Removed: Selectivizr, a script only Internet Explorer 8 and older needed
 = Added: Responsive embeds
+= Changed: Support links point to the WordPress.org forum; dead demo, documentation and community links removed
 
 == Child Theme Support ===
 Sampresson Lite supports child themes. Please use child themes for customization of "Sampression Lite". For further reading: https://codex.wordpress.org/Child_Themes.
