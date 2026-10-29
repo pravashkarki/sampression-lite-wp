@@ -2,9 +2,9 @@
 
 Contributors: sampression
 Requires at least: 5.2
-Requires PHP: 5.6.20
-Tested up to: 5.8
-Stable tag: 2.3
+Requires PHP: 5.6
+Tested up to: 7.1
+Stable tag: 2.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: two-columns, four-columns, left-sidebar, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, blog
@@ -71,7 +71,6 @@ Responsive Design, Cross Browser Compatibility, Custom Code, Custom Logo, Custom
 = JS =
  = Shuffle.js by @Vestride (https://vestride.github.io/Shuffle/) - @license MIT license (https://opensource.org/licenses/MIT)
  = Modernizr: https://github.com/Modernizr/Modernizr - @license MIT license (https://opensource.org/licenses/MIT)
- = Selectivizr: https://github.com/keithclark/selectivizr - @license MIT license (https://opensource.org/licenses/MIT)
 
 == Changelog ==
 Version 1.1.2.1.2
@@ -243,6 +242,11 @@ Version 2.3
 = Added: Skip link
 = Added: Keyboard Navigation
 
+
+Version 2.4
+= Tested: Compatible with WordPress 7.1
+= Removed: Selectivizr, a script only Internet Explorer 8 and older needed
+= Added: Responsive embeds
 
 == Child Theme Support ===
 Sampresson Lite supports child themes. Please use child themes for customization of "Sampression Lite". For further reading: https://codex.wordpress.org/Child_Themes.

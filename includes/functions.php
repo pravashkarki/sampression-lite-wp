@@ -46,6 +46,7 @@ if ( ! function_exists( 'sampression_setup' ) ):
 		 * @see https://codex.wordpress.org/Function_Reference/add_theme_support#Feed_Links
 		 */
 		add_theme_support( 'automatic-feed-links' );
+		add_theme_support( 'responsive-embeds' );
 
 		/*
 		 * Let WordPress manage the document title.
@@ -663,10 +664,6 @@ if ( ! function_exists( 'sampression_enqueue_styles' ) ):
 		wp_enqueue_style( 'sampression-fonts', sampression_fonts_url(), array(), null );
 		wp_enqueue_style( 'genericons', get_template_directory_uri() . '/genericons/genericons.css', false, false, 'screen' );
 		wp_enqueue_style( 'sampression-style', get_stylesheet_uri(), false, '1.4' );
-
-		// Load selectivizr.js
-		wp_enqueue_script( 'sampression-selectivizr', get_template_directory_uri() . '/lib/js/selectivizr.js', array(), '1.0.2', true );
-		wp_script_add_data( 'sampression-selectivizr', 'conditional', 'lt IE 9' );
 
 	}
 endif;
